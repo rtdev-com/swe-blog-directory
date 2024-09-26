@@ -1,0 +1,16 @@
+{% extends "parent_template.html" %}
+{% block content %}
+    <h2>Latest Posts</h2>
+    <p>Last updated on {{ date_generated }}</p>
+    {% for post in rss_feeds %}
+        <article id="article">
+            <h2>{{ post.title }}</h2>
+                <p>
+                    {{ post.description }} 
+                    <a href="{{ post.link }}">Take me to this post.</a>
+                </p>
+        </article>
+    {% endfor %}
+
+    <a href="index.html">Back to Home</a>
+{% endblock %}
