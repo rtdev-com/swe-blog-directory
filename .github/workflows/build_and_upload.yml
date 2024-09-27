@@ -1,4 +1,4 @@
-name: Build anmd deploy
+name: Build and deploy
 on:
   push:
     branches: [actions_setup]
