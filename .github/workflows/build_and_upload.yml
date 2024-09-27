@@ -1,0 +1,41 @@
+name: Build anmd deploy
+on:
+  push:
+    branches: [actions_setup]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build 🛠
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@main
+      - name: Install dependencies 📦
+        run: python -m pip install --upgrade pip && pip install -r requirements.txt
+      - name: Build 🏗
+        run: python build.py
+      - name: Archive production artifacts 📦
+        uses: actions/upload-artifact@main
+        with:
+          name: dist
+          path: dist
+  deploy:
+    name: Deploy 🚀
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@main
+      - name: Download production artifacts 
+        uses: actions/download-artifact@main
+        with:
+          name: dist
+          path: dist
+      - name: Deploy to production 🚀
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./output/
