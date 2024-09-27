@@ -278,5 +278,12 @@
         "title": "Keith Harrison",
         "description": "Use Your Loaf",
         "tags": "iphone, swiftui, xcode, apple, ios"
+    },
+    {
+        "url": "https://aphyr.com/",
+        "rss": "https://aphyr.com/posts.atom",
+        "title": "Kyle Kingsbury",
+        "description": "Aphyr's blog on computer safety and other topics.",
+        "tags": "java, clojure, mastodon, jepsen, interviews"
     }
 ]
