@@ -16,10 +16,10 @@ jobs:
       - name: Build 🏗
         run: python build.py
       - name: Archive production artifacts 📦
-        uses: actions/upload-artifact@main
+        uses: actions/upload-artifact@v4
         with:
           name: dist
-          path: dist
+          path: ./output/
   deploy:
     name: Deploy 🚀
     needs: build
@@ -28,7 +28,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@main
       - name: Download production artifacts 
-        uses: actions/download-artifact@main
+        uses: actions/upload-artifact@v4
         with:
           name: dist
           path: dist
