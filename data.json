@@ -225,7 +225,7 @@
     },
     {
         "url": "https://www.jeremykun.com",
-        "rss": "https://www.jeremykun.com/rss/",
+        "rss": "https://www.jeremykun.com/index.xml",
         "title": "Math ∩ Programming",
         "description": "Jeremy Kun's blog about mathematics and programming.",
         "tags": "google, cryptography, math, python, rust"
@@ -243,5 +243,40 @@
         "title": "Jon Skeet's coding blog",
         "description": "Jon's blog covering mostly C# and .NET topics.",
         "tags": "c-sharp, linq, async, book-reviews, stackoverflow"
+    },
+    {
+        "url": "https://snook.ca",
+        "rss": "https://snook.ca/jonathan/index.rdf",
+        "title": "Jonathan Snook",
+        "description": "Life and Times of a Web Developer",
+        "tags": "analytics, php, react, css, photography"
+    },
+    {
+        "url": "https://rachsmith.com",
+        "rss": "https://rachsmith.com/feed.xml",
+        "title": "Rach Smith's Digital Garden",
+        "description": "A blog from software developer for CodePen, wife, mother of two, productivity nerd and recovering screen addict.",
+        "tags": "codepen, sveltekit, astro, graphql, typescript"
+    },
+    {
+        "url": "https://joshtronic.com/blog/",
+        "rss": "https://joshtronic.com/feed/",
+        "title": "Josh Sherman",
+        "description": "A blog from the founder of Holiday API, Head of Engineering at Mailshake, and author of the best damn Lorem Ipsum Library for PHP.",
+        "tags": "mysql, linux, cli, enterpreneurship, vps"
+    },
+    {
+        "url": "https://jvns.ca",
+        "rss": "https://jvns.ca/atom.xml",
+        "title": "Julia Evans",
+        "description": "Showing how topics traditionally considered hard and scary are actually accessible and interesting and fun.",
+        "tags": "databases, kernel, tcp, gzip, ssl"
+    },
+    {
+        "url": "https://useyourloaf.com/blog/",
+        "rss": "https://useyourloaf.com/blog/rss.xml",
+        "title": "Keith Harrison",
+        "description": "Use Your Loaf",
+        "tags": "iphone, swiftui, xcode, apple, ios"
     }
 ]

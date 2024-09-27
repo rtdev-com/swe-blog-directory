@@ -43,22 +43,7 @@ for row in data:
                 'published': datetime(*latest_entry.published_parsed[:6]) if 'published_parsed' in latest_entry else datetime.now()
             })
         else:
-            # Handle encoding issues
-            if 'bozo_exception' in feed and isinstance(feed.bozo_exception, UnicodeDecodeError):
-                print(f"Encoding error for URL {row['rss']}: {feed.bozo_exception}. Retrying with explicit encoding.")
-                feed = feedparser.parse(row['rss'], request_headers={'User-Agent': 'Mozilla/5.0'}, encoding='utf-8')
-                if feed.bozo == 0 and 'feed' in feed:
-                    latest_entry = feed.entries[0]
-                    rss_feeds.append({
-                        'title': latest_entry.title,
-                        'link': latest_entry.link,
-                        'description': f'{strip_html_tags(latest_entry.description)[:500]}...',
-                        'published': datetime(*latest_entry.published_parsed[:6]) if 'published_parsed' in latest_entry else datetime.now()
-                    })
-                else:
-                    print(f"Error parsing feed for URL {row['rss']} after retry: {feed.bozo_exception}")
-            else:
-                print(f"Error parsing feed for URL {row['rss']}: {feed.bozo_exception}")
+            print(f"Error parsing feed for URL {row['rss']}: {feed.bozo_exception}")
 
 # Sort rss_feeds by date, newest first
 rss_feeds.sort(key=lambda x: x['published'], reverse=True)
