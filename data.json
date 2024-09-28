@@ -285,5 +285,12 @@
         "title": "Kyle Kingsbury",
         "description": "Aphyr's blog on computer safety and other topics.",
         "tags": "java, clojure, mastodon, jepsen, interviews"
+    },
+    {
+        "url": "https://lea.verou.me/",
+        "rss": "https://lea.verou.me/feed.xml",
+        "title": "Lea Verou",
+        "description": "Lea loves making things. She designs new web technologies, and tools used by millions of developers.",
+        "tags": "webdev, font-awesome, css, api, html"
     }
 ]
