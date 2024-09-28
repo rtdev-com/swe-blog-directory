@@ -1,0 +1,28 @@
+{% extends "parent_template.html" %}
+{% block content %}
+<h1>Freshly Added Blogs</h1>
+    {% for entry in latest_entries %}
+        <article id="article">
+            <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
+                <p>
+                    {{ entry.description }}
+                </p>
+            <footer>
+                {% for tag in entry.tags.split(',') %}
+                    <small><a href="topic/{{ tag.strip() }}.html">{{ tag.strip() }}</a>{% if not loop.last %}, {% endif %}</small>
+                {% endfor %}
+            </footer>
+        </article>
+    {% endfor %}
+
+    <h2>Tag Cloud</h2>
+    <p>
+        {% for tag, count in tags_counter.items() %}
+            {% if count > 1 %}
+                <strong><a href="topic/{{ tag }}.html">{{ tag }}</a></strong>
+            {% else %}
+                <a href="topic/{{ tag }}.html">{{ tag }}</a>
+            {% endif %}
+        {% endfor %}
+    </p>
+{% endblock %}

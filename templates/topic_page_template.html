@@ -1,0 +1,18 @@
+{% extends "parent_template.html" %}
+{% block content %}
+    <h1>Blogs about {{ tag }}</h1>
+    {% for entry in entries %}
+        <article id="article">
+            <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
+                <p>
+                    {{ entry.description }}
+                </p>
+            <footer>
+                {% for tag in entry.tags.split(',') %}
+                    <small><a href="{{ tag.strip() }}.html">{{ tag.strip() }}</a>{% if not loop.last %}, {% endif %}</small>
+                {% endfor %}
+            </footer>
+        </article>
+    {% endfor %}
+    <a href="../index.html">Back to Home</a>
+{% endblock %}

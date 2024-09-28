@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} | Software Engineering Blog Directory</title>
+    <meta name="description" content="Discover active software engineering blogs.">
+    <link rel="stylesheet" href="https://sweblogs.fyi/css/pico.classless.min.css">
+</head>
+<body>
+  <header>
+      <hgroup>
+        <h1>SWE Blog Directory</h1>
+        <p>Discover active software engineering blogs</p>
+      </hgroup>
+      <nav>
+          <ul>
+            <li><a href="https://sweblogs.fyi/">Home</a></li>
+            <li><a href="https://sweblogs.fyi/new_posts.html">Latest posts</a></li>
+            <li><a href="https://github.com/rtdev-com/swe-blog-directory" data-theme-switcher="dark">Contribute</a></li>
+          </ul>
+      </nav>
+  </header>
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+</body>
+</html>
