@@ -276,7 +276,7 @@
         "url": "https://useyourloaf.com/blog/",
         "rss": "https://useyourloaf.com/blog/rss.xml",
         "title": "Keith Harrison",
-        "description": "Use Your Loaf",
+        "description": "Use Your Loaf.",
         "tags": "iphone, swiftui, xcode, apple, ios"
     },
     {
@@ -292,5 +292,12 @@
         "title": "Lea Verou",
         "description": "Lea loves making things. She designs new web technologies, and tools used by millions of developers.",
         "tags": "webdev, font-awesome, css, api, html"
+    },
+    {
+        "url": "https://lerner.co.il/blog/",
+        "rss": "https://lerner.co.il/feed/",
+        "title": "Reuven's blog",
+        "description": "A blog written by a full-time Python trainer.",
+        "tags": "python, pandas, linux, teaching, training"
     }
 ]
