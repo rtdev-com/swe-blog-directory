@@ -299,5 +299,19 @@
         "title": "Reuven's blog",
         "description": "A blog written by a full-time Python trainer.",
         "tags": "python, pandas, linux, teaching, training"
+    },
+    {
+        "url": "https://zachholman.com/posts",
+        "rss": "https://zachholman.com/atom.xml",
+        "title": "Zach Holman",
+        "description": "A blog written by a full-time Python trainer.",
+        "tags": "angel, investing, startups, vs, x"
+    },
+    {
+        "url": "https://una.im/blog/",
+        "rss": "https://una.im/rss.xml",
+        "title": "Una Kravets Online",
+        "description": "The personal website of Una Kravets. Front-end developer, tech content creator, and supporter of all things web UI.",
+        "tags": "css, html, javascript, webdev, design"
     }
 ]
