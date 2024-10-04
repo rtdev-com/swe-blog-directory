@@ -313,5 +313,12 @@
         "title": "Una Kravets Online",
         "description": "The personal website of Una Kravets. Front-end developer, tech content creator, and supporter of all things web UI.",
         "tags": "css, html, javascript, webdev, design"
+    },
+    {
+        "url": "https://tobebuilds.com",
+        "rss": "https://tobebuilds.com/feed/",
+        "title": "Tobe Osakwe",
+        "description": "Tobe writes about startups, technology, and productivity.",
+        "tags": "technology, productivity, startups, webdev, design"
     }
 ]
