@@ -308,10 +308,17 @@
         "tags": "angel, investing, startups, vs, x"
     },
     {
-        "url": "https://una.im/blog/",
-        "rss": "https://una.im/rss.xml",
-        "title": "Una Kravets Online",
-        "description": "The personal website of Una Kravets. Front-end developer, tech content creator, and supporter of all things web UI.",
-        "tags": "css, html, javascript, webdev, design"
+        "url": "https://medium.com/@marcelorinesi",
+        "rss": "https://medium.com/feed/@marcelorinesi",
+        "title": "Marcelo Rinesi",
+        "description": "The purpose of computing is thinking.",
+        "tags": "ai, thinking, computing, philosophy, technology"
+    },
+    {
+        "url": "https://blog.nelhage.com",
+        "rss": "https://blog.nelhage.com/atom.xml",
+        "title": "Made of Bugs",
+        "description": "Nelson Elhage's blog about software and software engineering.",
+        "tags": "mchine-learning, cpp, unix, debugging, sql"
     }
 ]
