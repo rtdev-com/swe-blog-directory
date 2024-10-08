@@ -334,5 +334,12 @@
         "title": "Tobe Osakwe",
         "description": "Tobe writes about startups, technology, and productivity.",
         "tags": "technology, productivity, startups, webdev, design"
+    },
+    {
+        "url": "https://martinfowler.com/",
+        "rss": "https://martinfowler.com/feed.atom",
+        "title": "Martin Fowler",
+        "description": "A website on building software effectively.",
+        "tags": "refactoring, agile, architecture, testing, technical-debt"
     }
 ]
