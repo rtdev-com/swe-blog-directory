@@ -341,5 +341,12 @@
         "title": "Martin Fowler",
         "description": "A website on building software effectively.",
         "tags": "refactoring, agile, architecture, testing, technical-debt"
+    },
+    {
+        "url": "https://meowni.ca/writes/",
+        "rss": "https://meowni.ca/blog.xml",
+        "title": "Monica Dinculescu",
+        "description": "Monica Dinculescu's blog.",
+        "tags": "chat, bot, google, javascript, puppeteer"
     }
 ]
