@@ -348,5 +348,12 @@
         "title": "Monica Dinculescu",
         "description": "Monica Dinculescu's blog.",
         "tags": "chat, bot, google, javascript, puppeteer"
+    },
+    {
+        "url": "https://johncodes.com/archives/",
+        "rss": "https://johncodes.com/index.xml",
+        "title": "John McBride",
+        "description": "John is a senior software engineer at OpenSauced where he is working on backend infrastructure.",
+        "tags": "go, open-source, aws, opensauced, sre-tooling"
     }
 ]
