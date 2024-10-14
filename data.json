@@ -355,5 +355,12 @@
         "title": "John McBride",
         "description": "John is a senior software engineer at OpenSauced where he is working on backend infrastructure.",
         "tags": "go, open-source, aws, opensauced, sre-tooling"
+    },
+    {
+        "url": "https://blog.cryptographyengineering.com/all-posts/",
+        "rss": "https://blog.cryptographyengineering.com/feed/",
+        "title": "Matthew D. Green",
+        "description": "A Few Thoughts on Cryptographic Engineering.",
+        "tags": "cryptography, nsa, privacy, telegram, imessage"
     }
 ]
