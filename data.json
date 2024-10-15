@@ -362,5 +362,12 @@
         "title": "Matthew D. Green",
         "description": "A Few Thoughts on Cryptographic Engineering.",
         "tags": "cryptography, nsa, privacy, telegram, imessage"
+    },
+    {
+        "url": "https://oleb.net/blog/",
+        "rss": "https://oleb.net/blog/atom.xml",
+        "title": "Ole Begemann",
+        "description": "A blog from co-author of a book titled Advanced Swift.",
+        "tags": "swift, macos, xcode, ios, apple"
     }
 ]
