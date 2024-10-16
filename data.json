@@ -369,5 +369,12 @@
         "title": "Ole Begemann",
         "description": "A blog from co-author of a book titled Advanced Swift.",
         "tags": "swift, macos, xcode, ios, apple"
+    },
+    {
+        "url": "https://www.yegor256.com",
+        "rss": "https://www.yegor256.com/rss.xml",
+        "title": "Yegor Bugayenko",
+        "description": "Yegor's Blog About Computers.",
+        "tags": "programming, orm, oop, management, outsourcing"
     }
 ]
