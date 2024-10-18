@@ -376,5 +376,12 @@
         "title": "Yegor Bugayenko",
         "description": "Yegor's Blog About Computers.",
         "tags": "programming, orm, oop, management, outsourcing"
+    },
+    {
+        "url": "https://thedailywtf.com",
+        "rss": "http://syndication.thedailywtf.com/TheDailyWtf",
+        "title": "Alex Papadimoulis",
+        "description": "Daily WTF is your how-not-to guide for developing software.",
+        "tags": "programming, python, git, humor, server"
     }
 ]
