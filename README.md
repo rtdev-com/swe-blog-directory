@@ -1,10 +1,12 @@
 # Software Engineering Blog Directory
 
-![Repo Banner](imgs/sweblogs_banner.webp)
+[![Repo Banner](imgs/sweblogs_banner.webp)](https://sweblogs.fyi/)
 
 Welcome to the __Software Engineering Blog Directory__ 🙂! This is a growing list of non-corporate, active software engineering blogs from around the world. Our mission is to help engineers discover new voices, perspectives, and insights in the tech community.
 
 We'd love for you to contribute and help us keep this directory fresh and valuable!
+
+[Link to the site](https://sweblogs.fyi/) 🔗
 
 ## How to contribute 🚀
 
