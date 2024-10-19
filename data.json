@@ -383,5 +383,12 @@
         "title": "Alex Papadimoulis",
         "description": "Daily WTF is your how-not-to guide for developing software.",
         "tags": "programming, python, git, humor, server"
+    },
+    {
+        "url": "https://tania.dev/blog",
+        "rss": "https://tania.dev/rss.xml",
+        "title": "Tania Rascia",
+        "description": "Guides, references, and tutorials on programming, web development, and design.",
+        "tags": "api, jquery, graphql, react, wordpress"
     }
 ]
