@@ -390,5 +390,12 @@
         "title": "Tania Rascia",
         "description": "Guides, references, and tutorials on programming, web development, and design.",
         "tags": "api, jquery, graphql, react, wordpress"
+    },
+    {
+        "url": "https://catonmat.net",
+        "rss": "https://catonmat.net/feed",
+        "title": "Peter Krumins",
+        "description": "Blog from the founder and CEO of Browserling (a cross-browser testing company) and Online Tools (a get things done company).",
+        "tags": "browser-automation, logo-tools, perl, webdevtools, browserling"
     }
 ]
