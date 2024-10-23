@@ -397,5 +397,12 @@
         "title": "Peter Krumins",
         "description": "Blog from the founder and CEO of Browserling (a cross-browser testing company) and Online Tools (a get things done company).",
         "tags": "browser-automation, logo-tools, perl, webdevtools, browserling"
+    },
+    {
+        "url": "https://philipwalton.com",
+        "rss": "http://feeds.feedburner.com/philipwalton",
+        "title": "Philip Walton",
+        "description": "Blog from the engineer at Google working on Chrome and the Web Platform.",
+        "tags": "chrome-browser, es5, a-b-testing, css, web-performance"
     }
 ]
