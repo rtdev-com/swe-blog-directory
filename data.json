@@ -71,7 +71,6 @@
     },
     {
         "url": "https://www.jitbit.com/alexblog/",
-        "rss": "https://www.jitbit.com/alexblog/rss/",
         "title": "Founder's blog - Alex Yumashev",
         "description": "Alex writes about bootstrapping, marketing, SaaS and, of course, about lots of technical stuff.",
         "tags": "bootstrap, saas, helpdesk, marketing, target-blank-vulnerability"
@@ -176,7 +175,6 @@
     },
     {
         "url": "https://darkcoding.net",
-        "rss": "https://darkcoding.net/index.xml",
         "title": "Graham King",
         "description": "Personal blog of Graham King about software engineering and occasionally about society.",
         "tags": "chatgpt, rust, linux, ai, assembly"
@@ -400,9 +398,15 @@
     },
     {
         "url": "https://philipwalton.com",
-        "rss": "http://feeds.feedburner.com/philipwalton",
         "title": "Philip Walton",
         "description": "Blog from the engineer at Google working on Chrome and the Web Platform.",
         "tags": "chrome-browser, es5, a-b-testing, css, web-performance"
+    },
+    {
+        "url": "https://www.hanselman.com/blog/",
+        "title": "Scott Hanselman",
+        "rss": "http://feeds.hanselman.com/ScottHanselman",
+        "description": "Blog from a programmer, teacher, and speaker working from a home office in Portland, OR.",
+        "tags": "obs-studio, open-source, dos, windows, dotnet"
     }
 ]
