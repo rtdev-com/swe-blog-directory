@@ -415,5 +415,12 @@
         "rss": "https://rachelbythebay.com/w/feed/",
         "description": "Over 1000 posts on software, technology, sysadmin war stories, and more.",
         "tags": "sysadmin, ffmpeg, hosting, centos, rpi"
+    },
+    {
+        "url": "https://akrabat.com",
+        "title": "Rob Allen",
+        "rss": "https://akrabat.com/feed/",
+        "description": "Pragmatism in the real world.",
+        "tags": "http, api, oss, apache, macos"
     }
 ]
