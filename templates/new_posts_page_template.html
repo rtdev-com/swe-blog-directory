@@ -5,10 +5,11 @@
     {% for post in rss_feeds %}
         <article id="article">
             <h2>{{ post.title }}</h2>
-                <p>
-                    {{ post.description }} 
-                    <a href="{{ post.link }}">Take me to this post.</a>
-                </p>
+            <p>
+                {{ post.description }} 
+                <a href="{{ post.link }}">Take me to this post.</a>
+            </p>
+            <small>{{ post.formatted_date }}</small>
         </article>
     {% endfor %}
 
