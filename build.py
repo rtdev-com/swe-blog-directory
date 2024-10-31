@@ -40,13 +40,17 @@ for row in data:
                 'title': latest_entry.title,
                 'link': latest_entry.link,
                 'description': f'{strip_html_tags(latest_entry.description)[:500]}...',
-                'published': datetime(*latest_entry.published_parsed[:6]) if 'published_parsed' in latest_entry else datetime.now()
+                'published_date': datetime(*latest_entry.published_parsed[:6]) if 'published_parsed' in latest_entry else datetime(1900, 1, 1),
+                'formatted_date': datetime(*latest_entry.published_parsed[:6]).strftime("%B %d, %Y") if 'published_parsed' in latest_entry else datetime(1900, 1, 1)
             })
         else:
             print(f"Error parsing feed for URL {row['rss']}: {feed.bozo_exception}")
 
 # Sort rss_feeds by date, newest first
-rss_feeds.sort(key=lambda x: x['published'], reverse=True)
+rss_feeds.sort(key=lambda x: x['published_date'], reverse=True)
+
+# Grab up to top ten rss feeds
+rss_feeds = rss_feeds[:10]
 
 # Set up Jinja2 environment
 env = Environment(loader=FileSystemLoader('templates'))
