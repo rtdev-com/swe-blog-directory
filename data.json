@@ -429,5 +429,12 @@
         "rss": "https://blog.muffn.io/posts/index.xml",
         "description": "Blog about electronics and computers from systems engineer/architect in London.",
         "tags": "nas, de-google, ssh, hugo, automotive"
+    },
+    {
+        "url": "https://martinfowler.com",
+        "title": "Martin Fowler",
+        "rss": "https://martinfowler.com/feed.atom",
+        "description": "Self-described loud-mouthed pundit on the topic of software development, primarily for enterprise applications.",
+        "tags": "refactoring, design-patterns, agile, architecture, enterprise"
     }
 ]
