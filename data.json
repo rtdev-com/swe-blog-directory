@@ -436,5 +436,12 @@
         "rss": "https://martinfowler.com/feed.atom",
         "description": "Self-described loud-mouthed pundit on the topic of software development, primarily for enterprise applications.",
         "tags": "refactoring, design-patterns, agile, architecture, enterprise"
+    },
+    {
+        "url": "https://blog.fogus.me",
+        "title": "fogus",
+        "rss": "https://blog.fogus.me/feed/",
+        "description": "Send More Paramedics.",
+        "tags": "life, vodka, scala, ruby, lisp"
     }
 ]
