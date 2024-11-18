@@ -443,5 +443,12 @@
         "rss": "https://blog.fogus.me/feed/",
         "description": "Send More Paramedics.",
         "tags": "life, vodka, scala, ruby, lisp"
+    },
+    {
+        "url": "https://nikola-breznjak.com/blog/",
+        "title": "Nikola Brežnjak",
+        "rss": "https://nikola-breznjak.com/blog/feed/atom/",
+        "description": "I’m an engineer at heart and a jack of all trades kind of guy.",
+        "tags": "php, unity3d, android, nodejs, pluralsight"
     }
 ]
