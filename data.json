@@ -450,5 +450,12 @@
         "rss": "https://nikola-breznjak.com/blog/feed/atom/",
         "description": "I’m an engineer at heart and a jack of all trades kind of guy.",
         "tags": "php, unity3d, android, nodejs, pluralsight"
+    },
+    {
+        "url": "http://blog.pamelafox.org",
+        "title": "Pamela Fox",
+        "rss": "http://blog.pamelafox.org/feeds/posts/default?alt=rss",
+        "description": "Blog from Principal Cloud Advocate at Microsoft, focusing on the ways that developers can use Python with Azure service.",
+        "tags": "openai, extracting-data, python, azure, rag"
     }
 ]
