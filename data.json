@@ -457,5 +457,12 @@
         "rss": "http://blog.pamelafox.org/feeds/posts/default?alt=rss",
         "description": "Blog from Principal Cloud Advocate at Microsoft, focusing on the ways that developers can use Python with Azure service.",
         "tags": "openai, extracting-data, python, azure, rag"
+    },
+    {
+        "url": "https://swizec.com/blog/",
+        "title": "Swizec Teller",
+        "rss": "https://swizec.com/rss.xml",
+        "description": "A geek with a hat.",
+        "tags": "big-ball-of-mud, sql, dry, validation, career"
     }
 ]
