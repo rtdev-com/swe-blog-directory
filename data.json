@@ -464,5 +464,12 @@
         "rss": "https://swizec.com/rss.xml",
         "description": "A geek with a hat.",
         "tags": "big-ball-of-mud, sql, dry, validation, career"
+    },
+    {
+        "url": "https://tania.dev/blog",
+        "title": "Tania Rascia",
+        "rss": "https://tania.dev/rss.xml",
+        "description": "Guides, references, and tutorials on programming, web development, and design.",
+        "tags": "api, bash, jquery, webpack, wordpress"
     }
 ]
