@@ -471,5 +471,12 @@
         "rss": "http://blog.vanillajava.blog/feeds/posts/default?alt=rss",
         "description": "Understanding how Core Java really works can help you write simpler, faster applications.",
         "tags": "java, stacktrace, hashtable, stringbuffer, chronicle-software"
+    },
+    {
+        "url": "https://tania.dev/blog",
+        "title": "Tania Rascia",
+        "rss": "https://tania.dev/rss.xml",
+        "description": "Guides, references, and tutorials on programming, web development, and design.",
+        "tags": "api, bash, jquery, webpack, wordpress"
     }
 ]
