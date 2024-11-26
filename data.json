@@ -464,5 +464,12 @@
         "rss": "https://swizec.com/rss.xml",
         "description": "A geek with a hat.",
         "tags": "big-ball-of-mud, sql, dry, validation, career"
+    },
+    {
+        "url": "http://blog.vanillajava.blog",
+        "title": "Peter Lawrey",
+        "rss": "http://blog.vanillajava.blog/feeds/posts/default?alt=rss",
+        "description": "Understanding how Core Java really works can help you write simpler, faster applications.",
+        "tags": "java, stacktrace, hashtable, stringbuffer, chronicle-software"
     }
 ]
