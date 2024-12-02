@@ -478,5 +478,11 @@
         "rss": "https://tania.dev/rss.xml",
         "description": "Guides, references, and tutorials on programming, web development, and design.",
         "tags": "api, bash, jquery, webpack, wordpress"
+    },
+    {
+        "url": "http://radek.io",
+        "title": "Radek Pazdera",
+        "description": "A blog about building software and writing on the internet.",
+        "tags": "dev-reading, ai, lnug, gitwalk, open-source"
     }
 ]
