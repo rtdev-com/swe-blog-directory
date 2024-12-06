@@ -484,5 +484,12 @@
         "title": "Radek Pazdera",
         "description": "A blog about building software and writing on the internet.",
         "tags": "dev-reading, ai, lnug, gitwalk, open-source"
+    },
+    {
+        "url": "https://blogs.msdn.microsoft.com/oldnewthing/",
+        "title": "Raymond Chen",
+        "rss": "https://devblogs.microsoft.com/oldnewthing/feed/",
+        "description": "Practical development throughout the evolution of Windows.",
+        "tags": "dll, multi-threading, windows, cpp, shell"
     }
 ]
