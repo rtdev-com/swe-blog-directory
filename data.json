@@ -491,5 +491,12 @@
         "rss": "https://devblogs.microsoft.com/oldnewthing/feed/",
         "description": "Practical development throughout the evolution of Windows.",
         "tags": "dll, multi-threading, windows, cpp, shell"
+    },
+    {
+        "url": "https://muffinman.io/blog/",
+        "title": "Muffin Man",
+        "rss": "https://muffinman.io/atom.xml",
+        "description": "Ramblings, rants, projects and generative art.",
+        "tags": "npm, codepen, generative-art, javascript, skyblue"
     }
 ]
