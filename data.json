@@ -498,5 +498,12 @@
         "rss": "https://muffinman.io/atom.xml",
         "description": "Ramblings, rants, projects and generative art.",
         "tags": "npm, codepen, generative-art, javascript, skyblue"
+    },
+    {
+        "url": "https://blog.rtwilson.com",
+        "title": "Robin's Blog",
+        "rss": "https://blog.rtwilson.com/feed/",
+        "description": "Freelancer in Remote Sensing, GIS, Data Science and Python.",
+        "tags": "remote-sensing, gis, data-science, python, freelancing"
     }
 ]
