@@ -72,7 +72,7 @@ if os.path.exists(css_dst):
 shutil.copytree(css_src, css_dst)
 
 # Generate the main page
-latest_entries = data[-3:]  # Get the last three entries
+latest_entries = data[-3:][::-1]  # Get the last three entries
 index_content = index_template.render(
     title='Home Page',
     latest_entries=latest_entries,
