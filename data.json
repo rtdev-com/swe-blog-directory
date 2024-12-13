@@ -505,5 +505,12 @@
         "rss": "https://blog.rtwilson.com/feed/",
         "description": "Freelancer in Remote Sensing, GIS, Data Science and Python.",
         "tags": "remote-sensing, gis, data-science, python, freelancing"
+    },
+    {
+        "url": "https://vladmihalcea.com/blog/",
+        "title": "Vlad Mihalcea",
+        "rss": "https://vladmihalcea.com/feed/",
+        "description": "Blog from a Java Champion who also wrote the High-Performance Java Persistence book.",
+        "tags": "java, jpa, hibernate, spring, sql"
     }
 ]
