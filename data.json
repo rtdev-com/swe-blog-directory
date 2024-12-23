@@ -505,5 +505,12 @@
         "rss": "https://vladmihalcea.com/feed/",
         "description": "Blog from a Java Champion who also wrote the High-Performance Java Persistence book.",
         "tags": "java, jpa, hibernate, spring, sql"
+    },
+    {
+        "url": "https://blog.mitrichev.ch",
+        "title": "Petr Mitrichev",
+        "rss": "https://blog.mitrichev.ch/feeds/posts/default",
+        "description": "Algorithms Weekly blog.",
+        "tags": "algorithm, icpc-world-finals, codeforces, competitive-programming, topcoder"
     }
 ]
