@@ -512,5 +512,12 @@
         "rss": "https://blog.mitrichev.ch/feeds/posts/default",
         "description": "Algorithms Weekly blog.",
         "tags": "algorithm, icpc-world-finals, codeforces, competitive-programming, topcoder"
+    },
+    {
+        "url": "https://ruslanspivak.com/archives.html",
+        "title": "Ruslan Spivak",
+        "rss": "https://ruslanspivak.com/feeds/all.atom.xml",
+        "description": "Blog about software development in general and how to become a better developer.",
+        "tags": "procedure-calls, simple-interpreter, career-advice, choosing-projects, growth-mindset"
     }
 ]
