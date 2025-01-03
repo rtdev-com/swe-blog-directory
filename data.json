@@ -519,5 +519,11 @@
         "rss": "https://ruslanspivak.com/feeds/all.atom.xml",
         "description": "Blog about software development in general and how to become a better developer.",
         "tags": "procedure-calls, simple-interpreter, career-advice, choosing-projects, growth-mindset"
+    },
+    {
+        "url": "https://dennisivy.com/",
+        "title": "Dennis Ivanov",
+        "description": "Software developer, developer advocate at Appwrite, Udemy instructor, YouTuber and contributor at Traversy Media.",
+        "tags": "django, htmx, javascript, python, webdev"
     }
 ]
