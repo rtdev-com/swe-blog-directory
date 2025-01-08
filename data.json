@@ -519,5 +519,12 @@
         "rss": "https://ruslanspivak.com/feeds/all.atom.xml",
         "description": "Blog about software development in general and how to become a better developer.",
         "tags": "procedure-calls, simple-interpreter, career-advice, choosing-projects, growth-mindset"
+    },
+    {
+        "url": "https://blog.codinghorror.com",
+        "title": "Jeff Atwood",
+        "rss": "https://blog.codinghorror.com/rss/",
+        "description": "The creator of StackOverflow and the StackExchange network.",
+        "tags": "fun, humor, programming, software, web"
     }
 ]
