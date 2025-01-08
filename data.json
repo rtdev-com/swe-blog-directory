@@ -521,6 +521,12 @@
         "tags": "procedure-calls, simple-interpreter, career-advice, choosing-projects, growth-mindset"
     },
     {
+        "url": "https://dennisivy.com/",
+        "title": "Dennis Ivanov",
+        "description": "Software developer, developer advocate at Appwrite, Udemy instructor, YouTuber and contributor at Traversy Media.",
+        "tags": "django, htmx, javascript, python, webdev"
+    },
+    {
         "url": "https://blog.codinghorror.com",
         "title": "Jeff Atwood",
         "rss": "https://blog.codinghorror.com/rss/",
