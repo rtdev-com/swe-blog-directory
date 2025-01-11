@@ -532,5 +532,11 @@
         "rss": "https://blog.codinghorror.com/rss/",
         "description": "The creator of StackOverflow and the StackExchange network.",
         "tags": "fun, humor, programming, software, web"
+    },
+    {
+        "url": "https://richyhbm.co.uk/posts/",
+        "title": "Richard Howard Bent-Marshall",
+        "description": "Software engineer with a focus on game development and scalable backend development.",
+        "tags": "golang, infrastructure, kotlin, self-hosted, docker"
     }
 ]
