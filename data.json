@@ -538,5 +538,12 @@
         "title": "Richard Howard Bent-Marshall",
         "description": "Software engineer with a focus on game development and scalable backend development.",
         "tags": "golang, infrastructure, kotlin, self-hosted, docker"
+    },
+    {
+        "url": "https://blog.pragmaticengineer.com",
+        "title": "Gergely Orosz",
+        "rss": "https://feeds.feedburner.com/ThePragmaticEngineer",
+        "description": "The Pragmatic Engineer Blog.",
+        "tags": "early-tends, engineering-management, software-engineering, tech-career, tech-leadership"
     }
 ]
