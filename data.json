@@ -545,5 +545,12 @@
         "rss": "https://feeds.feedburner.com/ThePragmaticEngineer",
         "description": "The Pragmatic Engineer Blog.",
         "tags": "early-tends, engineering-management, software-engineering, tech-career, tech-leadership"
+    },
+    {
+        "url": "https://www.peterbe.com/plog",
+        "title": "Peter Bengtsson",
+        "rss": "https://www.peterbe.com/rss.xml",
+        "description": "Personal reflections and insights on coding, performance, and software from a seasoned engineer.",
+        "tags": "django, python, performance, webdev, javascript"
     }
 ]
