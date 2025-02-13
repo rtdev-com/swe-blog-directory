@@ -18,10 +18,12 @@
     <h2>Tag Cloud</h2>
     <p>
         {% for tag, count in tags_counter.items() %}
-            {% if count > 1 %}
+            {% if count > 5 %}
                 <strong><a href="topic/{{ tag }}.html">{{ tag }}</a></strong>
-            {% else %}
+            {% elif count > 1 %}
                 <a href="topic/{{ tag }}.html">{{ tag }}</a>
+            {% else %}
+                <small><a href="topic/{{ tag }}.html">{{ tag }}</a></small>
             {% endif %}
         {% endfor %}
     </p>
