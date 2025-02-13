@@ -552,5 +552,12 @@
         "rss": "https://www.peterbe.com/rss.xml",
         "description": "Personal reflections and insights on coding, performance, and software from a seasoned engineer.",
         "tags": "django, python, performance, webdev, javascript"
+    },
+    {
+        "url": "https://www.rasulkireev.com",
+        "title": "Rasul Kireev",
+        "rss": "https://www.rasulkireev.com/rss.xml",
+        "description": "Rasul Kireev’s blog is a personal space where he shares his journey as a Readwise programmer, blending tech tutorials, web development projects, and creative experiments in DIY food and lifestyle pursuits.",
+        "tags": "webdev, djnago, javascript, email-newsletter, python"
     }
 ]
