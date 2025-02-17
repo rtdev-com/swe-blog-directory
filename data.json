@@ -559,5 +559,12 @@
         "rss": "https://www.rasulkireev.com/rss.xml",
         "description": "Rasul Kireev’s blog is a personal space where he shares his journey as a Readwise programmer, blending tech tutorials, web development projects, and creative experiments in DIY food and lifestyle pursuits.",
         "tags": "webdev, djnago, javascript, email-newsletter, python"
+    },
+    {
+        "url": "https://hobijots.com/blogs/Software",
+        "title": "Allen Newton",
+        "rss": "https://hobijots.com/blogs/api/rssfeed/HobiJots/blog/3.xml",
+        "description": "Senior Software Developer from Portland, OR with over 20 years of experience writing software using Microsoft technologies.",
+        "tags": "dotnet, avaloniaui, rpi, razor-pages, robotics"
     }
 ]
