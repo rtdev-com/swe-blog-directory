@@ -39,3 +39,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./downloaded-build-output/
+          timeout: 190000
