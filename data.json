@@ -64,7 +64,7 @@
     },
     {
         "url": "https://bcantrill.dtrace.org",
-        "rss": "https://bcantrill.dtrace.org/feed/",
+        "rss": "https://bcantrill.dtrace.org/index.xml",
         "title": "The Observation Deck",
         "description": "The blog by Bryan Cantrill, a co-creator of DTrace, covers topics related to systems programming, operating systems, and technology insights.",
         "tags": "low-level, performance, history, industry, open-source"
@@ -349,7 +349,7 @@
     },
     {
         "url": "https://johncodes.com/archives/",
-        "rss": "https://johncodes.com/index.xml",
+        "rss": "https://johncodes.com/rss.xml",
         "title": "John McBride",
         "description": "John is a senior software engineer at OpenSauced where he is working on backend infrastructure.",
         "tags": "go, open-source, aws, opensauced, sre-tooling"
@@ -412,7 +412,7 @@
     {
         "url": "https://rachelbythebay.com/w/",
         "title": "Rachel by the Bay",
-        "rss": "https://rachelbythebay.com/w/feed/",
+        "rss": "https://rachelbythebay.com/w/atom.xml",
         "description": "Over 1000 posts on software, technology, sysadmin war stories, and more.",
         "tags": "sysadmin, ffmpeg, hosting, centos, rpi"
     },
