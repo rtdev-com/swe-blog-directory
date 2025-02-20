@@ -22,10 +22,10 @@ Don’t worry if you’re new to GitHub; we're happy to help guide you through t
 
 To maintain the quality and relevance of the directory, we ask that any new blog submissions meet these simple criteria:
 
-1. Blog Age: The blog should be at least 1 year old.
-1. Posting Frequency: At least 1 post per quarter (4 per year).
-1. Recency: The latest post should be within the last 3 months.
-1. Author Type: Blogs must be written by individuals or small groups—no corporate or heavily commercialized blogs, please!
+1. __Blog Age__: The blog should be at least 1 year old.
+1. __Posting Frequency__: At least 1 post per quarter (4 per year).
+1. __Recency__: The latest post should be within the last 3 months.
+1. __Author Type:__ Blogs must be written by individuals or small groups—no corporate or heavily commercialized blogs, please!
 
 If you're unsure whether a blog qualifies, feel free to open a discussion, and we'll take a look together!
 
