@@ -1,6 +1,19 @@
 {% extends "parent_template.html" %}
 {% block content %}
-<h1>Freshly Added Blogs</h1>
+    <h1>Tag Cloud</h1>
+    <p>
+        {% for tag, count in tags_counter.items() %}
+            {% if count > 5 %}
+                <strong><a href="topic/{{ tag }}.html">{{ tag }}</a></strong>
+            {% elif count > 1 %}
+                <a href="topic/{{ tag }}.html">{{ tag }}</a>
+            {% else %}
+                <small><a href="topic/{{ tag }}.html">{{ tag }}</a></small>
+            {% endif %}
+        {% endfor %}
+    </p>
+
+    <h2>Freshly Added Blogs</h2>
     {% for entry in latest_entries %}
         <article id="article">
             <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
@@ -14,17 +27,4 @@
             </footer>
         </article>
     {% endfor %}
-
-    <h2>Tag Cloud</h2>
-    <p>
-        {% for tag, count in tags_counter.items() %}
-            {% if count > 5 %}
-                <strong><a href="topic/{{ tag }}.html">{{ tag }}</a></strong>
-            {% elif count > 1 %}
-                <a href="topic/{{ tag }}.html">{{ tag }}</a>
-            {% else %}
-                <small><a href="topic/{{ tag }}.html">{{ tag }}</a></small>
-            {% endif %}
-        {% endfor %}
-    </p>
 {% endblock %}
