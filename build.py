@@ -22,7 +22,7 @@ with open(json_file_path, 'r', encoding='utf-8') as jsonfile:
 
 tags_counter = Counter()
 tag_entries = defaultdict(list)
-rss_feeds = []
+posts_from_today = []
 
 for row in data:
     tags = row['tags'].split(',')
@@ -35,28 +35,30 @@ for row in data:
     if 'rss' in row:
         feed = feedparser.parse(row['rss'])
         if feed.bozo == 0 and 'feed' in feed:
-            latest_entry = feed.entries[0]
-            rss_feeds.append({
-                'title': latest_entry.title,
-                'link': latest_entry.link,
-                'description': f'{strip_html_tags(latest_entry.description)[:500]}...',
-                'published_date': datetime(*latest_entry.published_parsed[:6]) if 'published_parsed' in latest_entry else datetime(1900, 1, 1),
-                'formatted_date': datetime(*latest_entry.published_parsed[:6]).strftime("%B %d, %Y") if 'published_parsed' in latest_entry else datetime(1900, 1, 1)
-            })
+            for post in feed.entries:
+                published_date = datetime(*post.published_parsed[:6]) if 'published_parsed' in post else datetime(1900, 1, 1)
+                if published_date.date() == datetime.now().date():
+                    posts_from_today.append({
+                        'title': post.title,
+                        'link': post.link,
+                        'description': f'{strip_html_tags(post.description)[:500]}...',
+                        'published_date': published_date,
+                        'formatted_date': published_date.strftime("%B %d, %Y")
+                    })
         else:
             print(f"Error parsing feed for URL {row['rss']}: {feed.bozo_exception}")
 
 # Sort rss_feeds by date, newest first
-rss_feeds.sort(key=lambda x: x['published_date'], reverse=True)
-
-# Grab up to top ten rss feeds
-rss_feeds = rss_feeds[:10]
+posts_from_today.sort(key=lambda x: x['published_date'], reverse=True)
 
 # Set up Jinja2 environment
 env = Environment(loader=FileSystemLoader('templates'))
 index_template = env.get_template('home_page_template.html')
 tag_template = env.get_template('topic_page_template.html')
 rss_template = env.get_template('new_posts_page_template.html')
+
+# Create latest entries page slug
+latest_entries_slug = f'posts-from-{datetime.now().strftime("%Y-%m-%d")}.html'
 
 # Create output directories if they doesn't exist
 output_dir = 'output'
@@ -75,6 +77,7 @@ shutil.copytree(css_src, css_dst)
 latest_entries = data[-3:][::-1]  # Get the last three entries
 index_content = index_template.render(
     title='Home Page',
+    latest_entries_slug=latest_entries_slug,
     latest_entries=latest_entries,
     tags_counter=tags_counter
 )
@@ -86,6 +89,7 @@ with open(index_file_path, 'w', encoding='utf-8') as f:
 for tag, entries in tag_entries.items():
     tag_content = tag_template.render(
         title=f'{tag} Topic Page',
+        latest_entries_slug=latest_entries_slug,
         tag=tag,
         entries=entries
     )
@@ -95,11 +99,12 @@ for tag, entries in tag_entries.items():
 
 # Generate RSS feed page
 rss_content = rss_template.render(
-    title='Latest Blog Posts',
-    rss_feeds=rss_feeds,
+    title=f'Blog Posts from {datetime.now().strftime("%B %d, %Y")}',
+    latest_entries_slug=latest_entries_slug,
+    rss_feeds=posts_from_today,
     date_generated=datetime.now().strftime("%B %d, %Y")
 )
-rss_file_path = os.path.join(output_dir, 'new_posts.html')
+rss_file_path = os.path.join(output_dir, latest_entries_slug)
 with open(rss_file_path, 'w', encoding='utf-8') as f:
     f.write(rss_content)
 

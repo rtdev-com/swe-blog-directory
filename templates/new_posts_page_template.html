@@ -1,7 +1,7 @@
 {% extends "parent_template.html" %}
 {% block content %}
-    <h2>Latest Posts</h2>
-    <p>Last updated on {{ date_generated }}</p>
+    <h2>Posts from today</h2>
+    <p>This page was built on {{ date_generated }}</p>
     {% for post in rss_feeds %}
         <article id="article">
             <h2>{{ post.title }}</h2>
