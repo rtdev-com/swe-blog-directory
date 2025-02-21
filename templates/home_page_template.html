@@ -1,14 +1,15 @@
 {% extends "parent_template.html" %}
 {% block content %}
     <h1>Tag Cloud</h1>
-    <p>
+    <input type="text" id="search" placeholder="Search tags...">
+    <p id="tag-cloud">
         {% for tag, count in tags_counter.items() %}
             {% if count > 5 %}
-                <strong><a href="topic/{{ tag }}.html">{{ tag }}</a></strong>
+                <strong><a href="topic/{{ tag }}.html" class="tag">{{ tag }}</a></strong>
             {% elif count > 1 %}
-                <a href="topic/{{ tag }}.html">{{ tag }}</a>
+                <a href="topic/{{ tag }}.html" class="tag">{{ tag }}</a>
             {% else %}
-                <small><a href="topic/{{ tag }}.html">{{ tag }}</a></small>
+                <small><a href="topic/{{ tag }}.html" class="tag">{{ tag }}</a></small>
             {% endif %}
         {% endfor %}
     </p>
@@ -27,4 +28,21 @@
             </footer>
         </article>
     {% endfor %}
+{% endblock %}
+{% block lower_body_script %}
+<script>
+    document.getElementById('search').addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+        const tags = document.querySelectorAll('#tag-cloud .tag');
+
+        tags.forEach(tag => {
+            const tagName = tag.textContent.toLowerCase();
+            if (tagName.includes(query) && query.length > 0) {
+                tag.style.backgroundColor = 'yellow';
+            } else {
+                tag.style.backgroundColor = '';
+            }
+        });
+    });
+</script>
 {% endblock %}
