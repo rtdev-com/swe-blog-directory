@@ -56,6 +56,7 @@ env = Environment(loader=FileSystemLoader('templates'))
 index_template = env.get_template('home_page_template.html')
 tag_template = env.get_template('topic_page_template.html')
 rss_template = env.get_template('new_posts_page_template.html')
+all_blogs_template = env.get_template('all_blogs_page_template.html')
 
 # Create latest entries page slug
 latest_entries_slug = f'posts-from-{datetime.now().strftime("%Y-%m-%d")}.html'
@@ -107,5 +108,15 @@ rss_content = rss_template.render(
 rss_file_path = os.path.join(output_dir, latest_entries_slug)
 with open(rss_file_path, 'w', encoding='utf-8') as f:
     f.write(rss_content)
+
+# Generate all blogs page
+all_blogs_content = all_blogs_template.render(
+    title='All Blogs',
+    latest_entries_slug=latest_entries_slug,
+    data=data,
+)
+all_blogs_file_path = os.path.join(output_dir, 'all_software_blogs.html')
+with open(all_blogs_file_path, 'w', encoding='utf-8') as f:
+    f.write(all_blogs_content)
 
 print("HTML files and JSON data have been generated in the 'output' directory.")

@@ -41,6 +41,7 @@
           <ul>
             <li><a href="https://sweblogs.fyi/">Home</a></li>
             <li><a href="https://sweblogs.fyi/{{ latest_entries_slug }}">Latest posts</a></li>
+            <li><a href="https://sweblogs.fyi/all_software_blogs.html">All blogs</a></li>
             <li><a href="https://github.com/rtdev-com/swe-blog-directory" data-theme-switcher="dark">Contribute</a></li>
           </ul>
       </nav>
@@ -49,5 +50,7 @@
     {% block content %}
     {% endblock %}
   </main>
+  {% block lower_body_script %}
+  {% endblock %}
 </body>
 </html>

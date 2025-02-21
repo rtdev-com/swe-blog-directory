@@ -1,0 +1,38 @@
+{% extends "parent_template.html" %}
+{% block content %}
+    <h1>All blogs</h1>
+    <input type="text" id="search" placeholder="Search blogs...">
+    {% for blog in data %}
+        <article class="article">
+            <h2><a href="{{ blog.url }}">{{ blog.title }}</a></h2>
+                <p>
+                    {{ blog.description }}
+                </p>
+            <footer>
+                {% for tag in blog.tags.split(',') %}
+                    <small><a href="topic/{{ tag.strip() }}.html">{{ tag.strip() }}</a>{% if not loop.last %}, {% endif %}</small>
+                {% endfor %}
+            </footer>
+        </article>
+    {% endfor %}
+{% endblock %}
+{% block lower_body_script %}
+<script>
+    document.getElementById('search').addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+        const blogs = document.querySelectorAll('.article');
+
+        blogs.forEach(blog => {
+            const title = blog.querySelector('h2 a').textContent.toLowerCase();
+            const description = blog.querySelector('p').textContent.toLowerCase();
+            const tags = Array.from(blog.querySelectorAll('footer small a')).map(tag => tag.textContent.toLowerCase());
+
+            if (title.includes(query) || description.includes(query) || tags.some(tag => tag.includes(query))) {
+                blog.style.display = '';
+            } else {
+                blog.style.display = 'none';
+            }
+        });
+    });
+</script>
+{% endblock %}
