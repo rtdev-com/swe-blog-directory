@@ -58,9 +58,6 @@ tag_template = env.get_template('topic_page_template.html')
 rss_template = env.get_template('new_posts_page_template.html')
 all_blogs_template = env.get_template('all_blogs_page_template.html')
 
-# Create latest entries page slug
-latest_entries_slug = f'posts-from-{datetime.now().strftime("%Y-%m-%d")}.html'
-
 # Create output directories if they doesn't exist
 output_dir = 'output'
 topic_dir = 'output/topic'
@@ -78,7 +75,6 @@ shutil.copytree(css_src, css_dst)
 latest_entries = data[-3:][::-1]  # Get the last three entries
 index_content = index_template.render(
     title='Home Page',
-    latest_entries_slug=latest_entries_slug,
     latest_entries=latest_entries,
     tags_counter=tags_counter
 )
@@ -90,7 +86,6 @@ with open(index_file_path, 'w', encoding='utf-8') as f:
 for tag, entries in tag_entries.items():
     tag_content = tag_template.render(
         title=f'{tag} Topic Page',
-        latest_entries_slug=latest_entries_slug,
         tag=tag,
         entries=entries
     )
@@ -101,18 +96,16 @@ for tag, entries in tag_entries.items():
 # Generate RSS feed page
 rss_content = rss_template.render(
     title=f'Blog Posts from {datetime.now().strftime("%B %d, %Y")}',
-    latest_entries_slug=latest_entries_slug,
     rss_feeds=posts_from_today,
     date_generated=datetime.now().strftime("%B %d, %Y")
 )
-rss_file_path = os.path.join(output_dir, latest_entries_slug)
+rss_file_path = os.path.join(output_dir, "new_posts.html")
 with open(rss_file_path, 'w', encoding='utf-8') as f:
     f.write(rss_content)
 
 # Generate all blogs page
 all_blogs_content = all_blogs_template.render(
     title='All Blogs',
-    latest_entries_slug=latest_entries_slug,
     data=data,
 )
 all_blogs_file_path = os.path.join(output_dir, 'all_software_blogs.html')
