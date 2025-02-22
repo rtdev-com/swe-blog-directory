@@ -4,567 +4,649 @@
         "rss": "https://romantaylor.com/feed/",
         "title": "Roman's Software Engineering Blog",
         "description": "Software career tips, insights into SaaS ideas, and open-source projects.",
-        "tags": "csharp, python, saas, django, career"
+        "tags": "csharp, python, saas, django, career",
+        "id": 1
     },
     {
         "url": "https://0xadada.pub/",
         "rss": "https://0xadada.pub/rss.xml",
         "title": "0xADADA produces code, motorsports, and essays",
         "description": "0xADADA writes software, does motorsports, and writes essays about the impact of the attention economy on idleness, time, and lived experience.",
-        "tags": "video, html, css, react, society, javascript"
+        "tags": "video, html, css, react, society, javascript",
+        "id": 2
     },
     {
         "url": "https://infrequently.org",
         "rss": "https://infrequently.org/feed/",
         "title": "Infrequently Noted",
         "description": "Alex Russell on browsers, standards, and the process of progress.",
-        "tags": "management, javascript, webdev"
+        "tags": "management, javascript, webdev",
+        "id": 3
     },
     {
         "url": "https://www.amitmerchant.com",
         "rss": "https://www.amitmerchant.com/feed.xml",
         "title": "Amit Merchant",
         "description": "A Jekyll blog on PHP, JavaScript, and more.",
-        "tags": "php, javascript, webdev"
+        "tags": "php, javascript, webdev",
+        "id": 4
     },
     {
         "url": "http://www.andrewcbancroft.com/",
         "rss": "https://www.andrewcbancroft.com/index.xml",
         "title": "Andrew Bancroft",
         "description": "Sharing bits of what I'm learning, one byte at a time.",
-        "tags": "macos, swiftui, ios, xcode, swift"
+        "tags": "macos, swiftui, ios, xcode, swift",
+        "id": 5
     },
     {
         "url": "https://lucumr.pocoo.org",
         "rss": "https://lucumr.pocoo.org/feed.atom",
         "title": "Armin Ronacher's Thoughts and Writings",
         "description": "Armin Ronacher's personal blog about programming, games and random thoughts that come to his mind.",
-        "tags": "python, jinja, minijinja, node, rust"
+        "tags": "python, jinja, minijinja, node, rust",
+        "id": 6
     },
     {
         "url": "https://2ality.com",
         "rss": "https://2ality.com/feeds/posts.atom",
-        "title": "2ality – JavaScript and more",
+        "title": "2ality \u2013 JavaScript and more",
         "description": "A blog about JavaScript, TypeScript and web development.",
-        "tags": "javascript, ecmascript, async, es2024, es2023"
+        "tags": "javascript, ecmascript, async, es2024, es2023",
+        "id": 7
     },
     {
         "url": "https://www.cppstories.com",
         "rss": "https://www.cppstories.com/index.xml",
         "title": "Bartlomiej Filipek's Technical Blog",
         "description": "Stay up-to-date with Modern C++.",
-        "tags": "cpp, cpp17, cpp20, cpp23, windows"
+        "tags": "cpp, cpp17, cpp20, cpp23, windows",
+        "id": 8
     },
     {
         "url": "https://www.brendangregg.com/blog/index.html",
         "rss": "https://www.brendangregg.com/blog/rss.xml",
         "title": "Brendan Gregg's Blog",
         "description": "Brandan shares and bookmarks various things about his work with computers.",
-        "tags": "linux, security, dtrace, dram, cpu"
+        "tags": "linux, security, dtrace, dram, cpu",
+        "id": 9
     },
     {
         "url": "https://bcantrill.dtrace.org",
         "rss": "https://bcantrill.dtrace.org/index.xml",
         "title": "The Observation Deck",
         "description": "The blog by Bryan Cantrill, a co-creator of DTrace, covers topics related to systems programming, operating systems, and technology insights.",
-        "tags": "low-level, performance, history, industry, open-source"
+        "tags": "low-level, performance, history, industry, open-source",
+        "id": 10
     },
     {
         "url": "https://www.jitbit.com/alexblog/",
         "title": "Founder's blog - Alex Yumashev",
         "description": "Alex writes about bootstrapping, marketing, SaaS and, of course, about lots of technical stuff.",
-        "tags": "bootstrap, saas, helpdesk, marketing, target-blank-vulnerability"
+        "tags": "bootstrap, saas, helpdesk, marketing, target-blank-vulnerability",
+        "id": 11
     },
     {
         "url": "https://carlosbecker.com",
         "rss": "https://carlosbecker.com/index.xml",
         "title": "Carlos Becker",
         "description": "Carlos creates, writes and operates software. These days, he works making the command line glamorous at Charm.",
-        "tags": "go, vpn, goreleaser, hugo, charm"
+        "tags": "go, vpn, goreleaser, hugo, charm",
+        "id": 12
     },
     {
         "url": "https://chenhuijing.com/blog/",
         "rss": "https://chenhuijing.com/feed.xml",
         "title": "Chen Hui Jing",
         "description": "The chronicles of a self-taught designer and developer.",
-        "tags": "drupal, devlife, javascript, typography, i18n"
+        "tags": "drupal, devlife, javascript, typography, i18n",
+        "id": 13
     },
     {
         "url": "https://nullprogram.com",
         "rss": "https://nullprogram.com/feed/",
         "title": "null program by Chris Wellons",
         "description": "New topics, software development techniques, showcase cool demos, and discuss contributions to open source.",
-        "tags": "c, cpp, win32, go, regex"
+        "tags": "c, cpp, win32, go, regex",
+        "id": 14
     },
     {
         "url": "https://tympanus.net/codrops/",
         "rss": "https://tympanus.net/codrops/feed/",
         "title": "Codrops | Fueling web creativity since 2009",
         "description": "Codrops is a destination for web design and development enthusiasts. High-quality, innovative content that explores the latest trends",
-        "tags": "front-end, dribble, grid-layout, webgl, javascript"
+        "tags": "front-end, dribble, grid-layout, webgl, javascript",
+        "id": 15
     },
     {
         "url": "https://danluu.com",
         "rss": "https://danluu.com/atom.xml",
         "title": "Dan Luu",
         "description": "Technical deep dives into systems, performance, and software engineering. The blog also discusses broader topics like industry practices, hiring, and productivity.",
-        "tags": "system-performance, latency, debugging, software-architecture, web-bloat"
+        "tags": "system-performance, latency, debugging, software-architecture, web-bloat",
+        "id": 16
     },
     {
         "url": "https://code.dblock.org",
         "rss": "https://code.dblock.org/feed.xml",
         "title": "Daniel Doubrovkine",
         "description": "Tech blog from an engineer working on OpenSearch at AWS in NYC.",
-        "tags": "ruby, mongodb, aws, github, heroku"
+        "tags": "ruby, mongodb, aws, github, heroku",
+        "id": 17
     },
     {
         "url": "https://davidwalsh.name",
         "rss": "https://davidwalsh.name/feed",
         "title": "David Walsh",
         "description": "A blog about web development, focusing primarily on JavaScript, CSS, HTML, and browser technologies.",
-        "tags": "javascript, css, curl, php, seo"
+        "tags": "javascript, css, curl, php, seo",
+        "id": 18
     },
     {
         "url": "https://hookrace.net",
         "rss": "https://hookrace.net/blog/feed/",
         "title": "HookRace Blog",
         "description": "Dennis Felsing's personal blog covering topics in CI and testing.",
-        "tags": "ci, testing, cloud, haskell, dos"
+        "tags": "ci, testing, cloud, haskell, dos",
+        "id": 19
     },
     {
         "url": "https://drewdevault.com",
         "rss": "https://drewdevault.com/blog/index.xml",
         "title": "Drew DeVault's blog",
         "description": "Technical blog mostly focusing on the free and open source space.",
-        "tags": "rust, linux, open-source, fos, git"
+        "tags": "rust, linux, open-source, fos, git",
+        "id": 20
     },
     {
         "url": "https://eli.thegreenplace.net",
         "rss": "https://eli.thegreenplace.net/feeds/all.atom.xml",
         "title": "Eli Bendersky's website",
         "description": "Eli's outlet for technical and programming-related posts on topics that are interesting to Eli.",
-        "tags": "go, web-assembly, linux, llm, google"
+        "tags": "go, web-assembly, linux, llm, google",
+        "id": 21
     },
     {
         "url": "https://evanhahn.com/blog/",
         "rss": "https://evanhahn.com/blog/index.xml",
         "title": "Evan Hahn's blog",
         "description": "Evan's programming blog that covers a variety of projects and hot-tos.",
-        "tags": "javascript, python, open-source, linux, signal"
+        "tags": "javascript, python, open-source, linux, signal",
+        "id": 22
     },
     {
         "url": "https://words.filippo.io",
         "rss": "https://words.filippo.io/rss/",
         "title": "Filippo Valsorda",
         "description": "A simple blog from a cryptography engineer and a professional open source maintainer.",
-        "tags": "machine-learning, cryptography, yubikey, go, rust"
+        "tags": "machine-learning, cryptography, yubikey, go, rust",
+        "id": 23
     },
     {
         "url": "https://freek.dev",
         "rss": "https://freek.dev/feed",
         "title": "Freek Van der Herten's blog on PHP, Laravel and JavaScript",
         "description": "Freek Van der Herten is a Laravel enthusiast and PHP developer at Spatie.",
-        "tags": "laravel, php, javascript, json, webdev"
+        "tags": "laravel, php, javascript, json, webdev",
+        "id": 24
     },
     {
         "url": "https://glebbahmutov.com/blog/",
         "rss": "https://glebbahmutov.com/blog/atom.xml",
         "title": "Dr. Gleb Bahmutov, PhD",
         "description": "JavaScript ninja, image processing expert, software quality fanatic blogging about a variety of software engineering topics.",
-        "tags": "book-reviews, javascript, cypress, testing, angularjs"
+        "tags": "book-reviews, javascript, cypress, testing, angularjs",
+        "id": 25
     },
     {
         "url": "https://darkcoding.net",
         "title": "Graham King",
         "description": "Personal blog of Graham King about software engineering and occasionally about society.",
-        "tags": "chatgpt, rust, linux, ai, assembly"
+        "tags": "chatgpt, rust, linux, ai, assembly",
+        "id": 26
     },
     {
         "url": "https://linuxblog.io",
         "rss": "https://linuxblog.io/feed/",
         "title": "Hayden James",
         "description": "Linux and Technology Insights.",
-        "tags": "linux, ai, php, nginx, mariadb"
+        "tags": "linux, ai, php, nginx, mariadb",
+        "id": 27
     },
     {
         "url": "https://henrikwarne.com",
         "rss": "https://henrikwarne.com/feed/",
         "title": "Henrik Warne's blog",
         "description": "Thoughts on programming...",
-        "tags": "chatgpt, math, book-reviews, interview-prep, go"
+        "tags": "chatgpt, math, book-reviews, interview-prep, go",
+        "id": 28
     },
     {
         "url": "https://huonw.github.io/blog/",
         "rss": "https://huonw.github.io/blog/rss.xml",
         "title": "Huon Wilson",
         "description": "Personal blog from a long-term volunteer on Rust's core team.",
-        "tags": "rust, github, qr-codes, memory-leaks, oop"
+        "tags": "rust, github, qr-codes, memory-leaks, oop",
+        "id": 29
     },
     {
         "url": "https://ilya.grigorik.com",
         "rss": "https://ilya.grigorik.com/essays/rss/",
         "title": "Ilya Grigorik",
         "description": "Personal blog from Distinguished Engineer at Shopify.",
-        "tags": "shopify, chrome, google-analytics, meetings, engineering-management"
+        "tags": "shopify, chrome, google-analytics, meetings, engineering-management",
+        "id": 30
     },
     {
         "url": "https://johns.codes/blog",
         "rss": "https://johns.codes/feed.xml",
         "title": "John's Codes",
         "description": "Will ramble on types, rust, and nix as much as humanely possible.",
-        "tags": "nix, rust, node, zig, typescript"
+        "tags": "nix, rust, node, zig, typescript",
+        "id": 31
     },
     {
         "url": "https://jaketrent.com",
         "rss": "https://jaketrent.com/post/feed.xml",
         "title": "Jake Trent",
         "description": "Jake's dev blog with some bits about life.",
-        "tags": "clojure, svelte, electron, react, jfrog"
+        "tags": "clojure, svelte, electron, react, jfrog",
+        "id": 32
     },
     {
         "url": "https://www.jeremykun.com",
         "rss": "https://www.jeremykun.com/index.xml",
-        "title": "Math ∩ Programming",
+        "title": "Math \u2229 Programming",
         "description": "Jeremy Kun's blog about mathematics and programming.",
-        "tags": "google, cryptography, math, python, rust"
+        "tags": "google, cryptography, math, python, rust",
+        "id": 33
     },
     {
         "url": "https://jes.al/blog/",
         "rss": "https://jes.al/atom.xml",
         "title": "Jesal Gadhia's Blog",
         "description": "Blog from hands-on full-stack engineer and people-first leader.",
-        "tags": "job-hunting, management, working-style, leadership, engineering"
+        "tags": "job-hunting, management, working-style, leadership, engineering",
+        "id": 34
     },
     {
         "url": "https://codeblog.jonskeet.uk",
         "rss": "https://codeblog.jonskeet.uk/feed/",
         "title": "Jon Skeet's coding blog",
         "description": "Jon's blog covering mostly C# and .NET topics.",
-        "tags": "c-sharp, linq, async, book-reviews, stackoverflow"
+        "tags": "c-sharp, linq, async, book-reviews, stackoverflow",
+        "id": 35
     },
     {
         "url": "https://snook.ca",
         "rss": "https://snook.ca/jonathan/index.rdf",
         "title": "Jonathan Snook",
         "description": "Life and Times of a Web Developer",
-        "tags": "analytics, php, react, css, photography"
+        "tags": "analytics, php, react, css, photography",
+        "id": 36
     },
     {
         "url": "https://rachsmith.com",
         "rss": "https://rachsmith.com/feed.xml",
         "title": "Rach Smith's Digital Garden",
         "description": "A blog from software developer for CodePen, wife, mother of two, productivity nerd and recovering screen addict.",
-        "tags": "codepen, sveltekit, astro, graphql, typescript"
+        "tags": "codepen, sveltekit, astro, graphql, typescript",
+        "id": 37
     },
     {
         "url": "https://joshtronic.com/blog/",
         "rss": "https://joshtronic.com/feed/",
         "title": "Josh Sherman",
         "description": "A blog from the founder of Holiday API, Head of Engineering at Mailshake, and author of the best damn Lorem Ipsum Library for PHP.",
-        "tags": "mysql, linux, cli, enterpreneurship, vps"
+        "tags": "mysql, linux, cli, enterpreneurship, vps",
+        "id": 38
     },
     {
         "url": "https://jvns.ca",
         "rss": "https://jvns.ca/atom.xml",
         "title": "Julia Evans",
         "description": "Showing how topics traditionally considered hard and scary are actually accessible and interesting and fun.",
-        "tags": "databases, kernel, tcp, gzip, ssl"
+        "tags": "databases, kernel, tcp, gzip, ssl",
+        "id": 39
     },
     {
         "url": "https://useyourloaf.com/blog/",
         "rss": "https://useyourloaf.com/blog/rss.xml",
         "title": "Keith Harrison",
         "description": "Use Your Loaf.",
-        "tags": "iphone, swiftui, xcode, apple, ios"
+        "tags": "iphone, swiftui, xcode, apple, ios",
+        "id": 40
     },
     {
         "url": "https://aphyr.com/",
         "rss": "https://aphyr.com/posts.atom",
         "title": "Kyle Kingsbury",
         "description": "Aphyr's blog on computer safety and other topics.",
-        "tags": "java, clojure, mastodon, jepsen, interviews"
+        "tags": "java, clojure, mastodon, jepsen, interviews",
+        "id": 41
     },
     {
         "url": "https://lea.verou.me/",
         "rss": "https://lea.verou.me/feed.xml",
         "title": "Lea Verou",
         "description": "Lea loves making things. She designs new web technologies, and tools used by millions of developers.",
-        "tags": "webdev, font-awesome, css, api, html"
+        "tags": "webdev, font-awesome, css, api, html",
+        "id": 42
     },
     {
         "url": "https://lerner.co.il/blog/",
         "rss": "https://lerner.co.il/feed/",
         "title": "Reuven's blog",
         "description": "A blog written by a full-time Python trainer.",
-        "tags": "python, pandas, linux, teaching, training"
+        "tags": "python, pandas, linux, teaching, training",
+        "id": 43
     },
     {
         "url": "https://zachholman.com/posts",
         "rss": "https://zachholman.com/atom.xml",
         "title": "Zach Holman",
         "description": "Written pieces, talks, and other bits by Zach Holman.",
-        "tags": "angel, investing, startups, vs, x"
+        "tags": "angel, investing, startups, vs, x",
+        "id": 44
     },
     {
         "url": "https://medium.com/@marcelorinesi",
         "rss": "https://medium.com/feed/@marcelorinesi",
         "title": "Marcelo Rinesi",
         "description": "The purpose of computing is thinking.",
-        "tags": "ai, thinking, computing, philosophy, technology"
+        "tags": "ai, thinking, computing, philosophy, technology",
+        "id": 45
     },
     {
         "url": "https://blog.nelhage.com",
         "rss": "https://blog.nelhage.com/atom.xml",
         "title": "Made of Bugs",
         "description": "Nelson Elhage's blog about software and software engineering.",
-        "tags": "mchine-learning, cpp, unix, debugging, sql"
+        "tags": "mchine-learning, cpp, unix, debugging, sql",
+        "id": 46
     },
     {
         "url": "https://una.im/blog/",
         "rss": "https://una.im/rss.xml",
         "title": "Una Kravets Online",
         "description": "The personal website of Una Kravets. Front-end developer, tech content creator, and supporter of all things web UI.",
-        "tags": "css, html, javascript, webdev, design"
+        "tags": "css, html, javascript, webdev, design",
+        "id": 47
     },
     {
         "url": "https://tobebuilds.com",
         "rss": "https://tobebuilds.com/feed/",
         "title": "Tobe Osakwe",
         "description": "Tobe writes about startups, technology, and productivity.",
-        "tags": "technology, productivity, startups, webdev, design"
+        "tags": "technology, productivity, startups, webdev, design",
+        "id": 48
     },
     {
         "url": "https://martinfowler.com/",
         "rss": "https://martinfowler.com/feed.atom",
         "title": "Martin Fowler",
         "description": "A website on building software effectively.",
-        "tags": "refactoring, agile, architecture, testing, technical-debt"
+        "tags": "refactoring, agile, architecture, testing, technical-debt",
+        "id": 49
     },
     {
         "url": "https://meowni.ca/writes/",
         "rss": "https://meowni.ca/blog.xml",
         "title": "Monica Dinculescu",
         "description": "Monica Dinculescu's blog.",
-        "tags": "chat, bot, google, javascript, puppeteer"
+        "tags": "chat, bot, google, javascript, puppeteer",
+        "id": 50
     },
     {
         "url": "https://johncodes.com/archives/",
         "rss": "https://johncodes.com/rss.xml",
         "title": "John McBride",
         "description": "John is a senior software engineer at OpenSauced where he is working on backend infrastructure.",
-        "tags": "go, open-source, aws, opensauced, sre-tooling"
+        "tags": "go, open-source, aws, opensauced, sre-tooling",
+        "id": 51
     },
     {
         "url": "https://blog.cryptographyengineering.com/all-posts/",
         "rss": "https://blog.cryptographyengineering.com/feed/",
         "title": "Matthew D. Green",
         "description": "A Few Thoughts on Cryptographic Engineering.",
-        "tags": "cryptography, nsa, privacy, telegram, imessage"
+        "tags": "cryptography, nsa, privacy, telegram, imessage",
+        "id": 52
     },
     {
         "url": "https://oleb.net/blog/",
         "rss": "https://oleb.net/blog/atom.xml",
         "title": "Ole Begemann",
         "description": "A blog from co-author of a book titled Advanced Swift.",
-        "tags": "swift, macos, xcode, ios, apple"
+        "tags": "swift, macos, xcode, ios, apple",
+        "id": 53
     },
     {
         "url": "https://www.yegor256.com",
         "rss": "https://www.yegor256.com/rss.xml",
         "title": "Yegor Bugayenko",
         "description": "Yegor's Blog About Computers.",
-        "tags": "programming, orm, oop, management, outsourcing"
+        "tags": "programming, orm, oop, management, outsourcing",
+        "id": 54
     },
     {
         "url": "https://thedailywtf.com",
         "rss": "http://syndication.thedailywtf.com/TheDailyWtf",
         "title": "Alex Papadimoulis",
         "description": "Daily WTF is your how-not-to guide for developing software.",
-        "tags": "programming, python, git, humor, server"
+        "tags": "programming, python, git, humor, server",
+        "id": 55
     },
     {
         "url": "https://tania.dev/blog",
         "rss": "https://tania.dev/rss.xml",
         "title": "Tania Rascia",
         "description": "Guides, references, and tutorials on programming, web development, and design.",
-        "tags": "api, jquery, graphql, react, wordpress"
+        "tags": "api, jquery, graphql, react, wordpress",
+        "id": 56
     },
     {
         "url": "https://catonmat.net",
         "rss": "https://catonmat.net/feed",
         "title": "Peter Krumins",
         "description": "Blog from the founder and CEO of Browserling (a cross-browser testing company) and Online Tools (a get things done company).",
-        "tags": "browser-automation, logo-tools, perl, webdevtools, browserling"
+        "tags": "browser-automation, logo-tools, perl, webdevtools, browserling",
+        "id": 57
     },
     {
         "url": "https://philipwalton.com",
         "title": "Philip Walton",
         "description": "Blog from the engineer at Google working on Chrome and the Web Platform.",
-        "tags": "chrome-browser, es5, a-b-testing, css, web-performance"
+        "tags": "chrome-browser, es5, a-b-testing, css, web-performance",
+        "id": 58
     },
     {
         "url": "https://www.hanselman.com/blog/",
         "title": "Scott Hanselman",
         "rss": "http://feeds.hanselman.com/ScottHanselman",
         "description": "Blog from a programmer, teacher, and speaker working from a home office in Portland, OR.",
-        "tags": "obs-studio, open-source, dos, windows, dotnet"
+        "tags": "obs-studio, open-source, dos, windows, dotnet",
+        "id": 59
     },
     {
         "url": "https://rachelbythebay.com/w/",
         "title": "Rachel by the Bay",
         "rss": "https://rachelbythebay.com/w/atom.xml",
         "description": "Over 1000 posts on software, technology, sysadmin war stories, and more.",
-        "tags": "sysadmin, ffmpeg, hosting, centos, rpi"
+        "tags": "sysadmin, ffmpeg, hosting, centos, rpi",
+        "id": 60
     },
     {
         "url": "https://akrabat.com",
         "title": "Rob Allen",
         "rss": "https://akrabat.com/feed/",
         "description": "Pragmatism in the real world.",
-        "tags": "http, api, oss, apache, macos"
+        "tags": "http, api, oss, apache, macos",
+        "id": 61
     },
     {
         "url": "https://blog.muffn.io",
         "title": "muffn_",
         "rss": "https://blog.muffn.io/posts/index.xml",
         "description": "Blog about electronics and computers from systems engineer/architect in London.",
-        "tags": "nas, de-google, ssh, hugo, automotive"
+        "tags": "nas, de-google, ssh, hugo, automotive",
+        "id": 62
     },
     {
         "url": "https://martinfowler.com",
         "title": "Martin Fowler",
         "rss": "https://martinfowler.com/feed.atom",
         "description": "Self-described loud-mouthed pundit on the topic of software development, primarily for enterprise applications.",
-        "tags": "refactoring, design-patterns, agile, architecture, enterprise"
+        "tags": "refactoring, design-patterns, agile, architecture, enterprise",
+        "id": 63
     },
     {
         "url": "https://blog.fogus.me",
         "title": "fogus",
         "rss": "https://blog.fogus.me/feed/",
         "description": "Send More Paramedics.",
-        "tags": "life, vodka, scala, ruby, lisp"
+        "tags": "life, vodka, scala, ruby, lisp",
+        "id": 64
     },
     {
         "url": "https://nikola-breznjak.com/blog/",
-        "title": "Nikola Brežnjak",
+        "title": "Nikola Bre\u017enjak",
         "rss": "https://nikola-breznjak.com/blog/feed/atom/",
-        "description": "I’m an engineer at heart and a jack of all trades kind of guy.",
-        "tags": "php, unity3d, android, nodejs, pluralsight"
+        "description": "I\u2019m an engineer at heart and a jack of all trades kind of guy.",
+        "tags": "php, unity3d, android, nodejs, pluralsight",
+        "id": 65
     },
     {
         "url": "http://blog.pamelafox.org",
         "title": "Pamela Fox",
         "rss": "http://blog.pamelafox.org/feeds/posts/default?alt=rss",
         "description": "Blog from Principal Cloud Advocate at Microsoft, focusing on the ways that developers can use Python with Azure service.",
-        "tags": "openai, extracting-data, python, azure, rag"
+        "tags": "openai, extracting-data, python, azure, rag",
+        "id": 66
     },
     {
         "url": "https://swizec.com/blog/",
         "title": "Swizec Teller",
         "rss": "https://swizec.com/rss.xml",
         "description": "A geek with a hat.",
-        "tags": "big-ball-of-mud, sql, dry, validation, career"
+        "tags": "big-ball-of-mud, sql, dry, validation, career",
+        "id": 67
     },
     {
         "url": "http://blog.vanillajava.blog",
         "title": "Peter Lawrey",
         "rss": "http://blog.vanillajava.blog/feeds/posts/default?alt=rss",
         "description": "Understanding how Core Java really works can help you write simpler, faster applications.",
-        "tags": "java, stacktrace, hashtable, stringbuffer, chronicle-software"
+        "tags": "java, stacktrace, hashtable, stringbuffer, chronicle-software",
+        "id": 68
     },
     {
         "url": "http://radek.io",
         "title": "Radek Pazdera",
         "description": "A blog about building software and writing on the internet.",
-        "tags": "dev-reading, ai, lnug, gitwalk, open-source"
+        "tags": "dev-reading, ai, lnug, gitwalk, open-source",
+        "id": 69
     },
     {
         "url": "https://blogs.msdn.microsoft.com/oldnewthing/",
         "title": "Raymond Chen",
         "rss": "https://devblogs.microsoft.com/oldnewthing/feed/",
         "description": "Practical development throughout the evolution of Windows.",
-        "tags": "dll, multi-threading, windows, cpp, shell"
+        "tags": "dll, multi-threading, windows, cpp, shell",
+        "id": 70
     },
     {
         "url": "https://muffinman.io/blog/",
         "title": "Muffin Man",
         "rss": "https://muffinman.io/atom.xml",
         "description": "Ramblings, rants, projects and generative art.",
-        "tags": "npm, codepen, generative-art, javascript, skyblue"
+        "tags": "npm, codepen, generative-art, javascript, skyblue",
+        "id": 71
     },
     {
         "url": "https://blog.rtwilson.com",
         "title": "Robin's Blog",
         "rss": "https://blog.rtwilson.com/feed/",
         "description": "Freelancer in Remote Sensing, GIS, Data Science and Python.",
-        "tags": "remote-sensing, gis, data-science, python, freelancing"
+        "tags": "remote-sensing, gis, data-science, python, freelancing",
+        "id": 72
     },
     {
         "url": "https://vladmihalcea.com/blog/",
         "title": "Vlad Mihalcea",
         "rss": "https://vladmihalcea.com/feed/",
         "description": "Blog from a Java Champion who also wrote the High-Performance Java Persistence book.",
-        "tags": "java, jpa, hibernate, spring, sql"
+        "tags": "java, jpa, hibernate, spring, sql",
+        "id": 73
     },
     {
         "url": "https://blog.mitrichev.ch",
         "title": "Petr Mitrichev",
         "rss": "https://blog.mitrichev.ch/feeds/posts/default",
         "description": "Algorithms Weekly blog.",
-        "tags": "algorithm, icpc-world-finals, codeforces, competitive-programming, topcoder"
+        "tags": "algorithm, icpc-world-finals, codeforces, competitive-programming, topcoder",
+        "id": 74
     },
     {
         "url": "https://ruslanspivak.com/archives.html",
         "title": "Ruslan Spivak",
         "rss": "https://ruslanspivak.com/feeds/all.atom.xml",
         "description": "Blog about software development in general and how to become a better developer.",
-        "tags": "procedure-calls, simple-interpreter, career-advice, choosing-projects, growth-mindset"
+        "tags": "procedure-calls, simple-interpreter, career-advice, choosing-projects, growth-mindset",
+        "id": 75
     },
     {
         "url": "https://dennisivy.com/",
         "title": "Dennis Ivanov",
         "description": "Software developer, developer advocate at Appwrite, Udemy instructor, YouTuber and contributor at Traversy Media.",
-        "tags": "django, htmx, javascript, python, webdev"
+        "tags": "django, htmx, javascript, python, webdev",
+        "id": 76
     },
     {
         "url": "https://blog.codinghorror.com",
         "title": "Jeff Atwood",
         "rss": "https://blog.codinghorror.com/rss/",
         "description": "The creator of StackOverflow and the StackExchange network.",
-        "tags": "fun, humor, programming, software, web"
+        "tags": "fun, humor, programming, software, web",
+        "id": 77
     },
     {
         "url": "https://richyhbm.co.uk/posts/",
         "title": "Richard Howard Bent-Marshall",
         "description": "Software engineer with a focus on game development and scalable backend development.",
-        "tags": "golang, infrastructure, kotlin, self-hosted, docker"
+        "tags": "golang, infrastructure, kotlin, self-hosted, docker",
+        "id": 78
     },
     {
         "url": "https://blog.pragmaticengineer.com",
         "title": "Gergely Orosz",
         "rss": "https://feeds.feedburner.com/ThePragmaticEngineer",
         "description": "The Pragmatic Engineer Blog.",
-        "tags": "early-tends, engineering-management, software-engineering, tech-career, tech-leadership"
+        "tags": "early-tends, engineering-management, software-engineering, tech-career, tech-leadership",
+        "id": 79
     },
     {
         "url": "https://www.peterbe.com/plog",
         "title": "Peter Bengtsson",
         "rss": "https://www.peterbe.com/rss.xml",
         "description": "Personal reflections and insights on coding, performance, and software from a seasoned engineer.",
-        "tags": "django, python, performance, webdev, javascript"
+        "tags": "django, python, performance, webdev, javascript",
+        "id": 80
     },
     {
         "url": "https://www.rasulkireev.com",
         "title": "Rasul Kireev",
         "rss": "https://www.rasulkireev.com/rss.xml",
-        "description": "Rasul Kireev’s blog is a personal space where he shares his journey as a Readwise programmer, blending tech tutorials, web development projects, and creative experiments in DIY food and lifestyle pursuits.",
-        "tags": "webdev, django, javascript, email-newsletter, python"
+        "description": "Rasul Kireev\u2019s blog is a personal space where he shares his journey as a Readwise programmer, blending tech tutorials, web development projects, and creative experiments in DIY food and lifestyle pursuits.",
+        "tags": "webdev, django, javascript, email-newsletter, python",
+        "id": 81
     },
     {
         "url": "https://hobijots.com/blogs/Software",
         "title": "Allen Newton",
         "rss": "https://hobijots.com/blogs/api/rssfeed/HobiJots/blog/3.xml",
         "description": "Senior Software Developer from Portland, OR with over 20 years of experience writing software using Microsoft technologies.",
-        "tags": "dotnet, avaloniaui, rpi, razor-pages, robotics"
+        "tags": "dotnet, avaloniaui, rpi, razor-pages, robotics",
+        "id": 82
     }
 ]
