@@ -35,14 +35,20 @@
         const query = this.value.toLowerCase();
         const tags = document.querySelectorAll('#tag-cloud .tag');
 
-        tags.forEach(tag => {
-            const tagName = tag.textContent.toLowerCase();
-            if (tagName.includes(query) && query.length > 0) {
-                tag.style.backgroundColor = 'yellow';
-            } else {
-                tag.style.backgroundColor = '';
-            }
-        });
+        if (query.length === 0) {
+            tags.forEach(tag => {
+                tag.style.display = '';
+            });
+        } else {
+            tags.forEach(tag => {
+                const tagName = tag.textContent.toLowerCase();
+                if (tagName.includes(query)) {
+                    tag.style.display = '';
+                } else {
+                    tag.style.display = 'none';
+                }
+            });
+        }
     });
 </script>
 {% endblock %}
