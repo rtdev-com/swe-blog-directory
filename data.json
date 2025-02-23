@@ -648,5 +648,13 @@
         "description": "Senior Software Developer from Portland, OR with over 20 years of experience writing software using Microsoft technologies.",
         "tags": "dotnet, avaloniaui, rpi, razor-pages, robotics",
         "id": 82
+    },
+    {
+        "url": "https://www.devleader.ca/archive",
+        "title": "Nick Cosentino",
+        "rss": "https://www.devleader.ca/feed.rss?withContent=true",
+        "description": "Seasoned software engineer, content creator, and educator with a passion for empowering aspiring developers and professionals alike.",
+        "tags": "dotnet, microsoft, leadership, software-engineering, career",
+        "id": 83
     }
 ]
