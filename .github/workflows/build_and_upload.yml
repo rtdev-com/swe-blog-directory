@@ -24,7 +24,9 @@ jobs:
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
           DB_NAME: ${{ secrets.DB_NAME }}
           COLLECTION_NAME: ${{ secrets.COLLECTION_NAME }}
-        run: python build.py
+        run: |
+          echo "$DB_NAME"
+          python build.py
       - name: Archive production artifacts 📦
         uses: actions/upload-artifact@v4
         with:
