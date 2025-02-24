@@ -23,9 +23,9 @@ jobs:
           timezoneWindows: "Eastern Standard Time"
       - name: Install dependencies 📦
         run: python -m pip install --upgrade pip && pip install -r requirements.txt
-      - name: Build 🏗
       - name: Debug Environment Variables
         run: printenv | grep -E 'MONGODB_URI|DB_NAME|COLLECTION_NAME'
+      - name: Build 🏗
         run: python build.py
       - name: Archive production artifacts 📦
         uses: actions/upload-artifact@v4
