@@ -92,9 +92,11 @@ search_posts_template = env.get_template('search_posts_page_template.html')
 
 # Create output directories if they doesn't exist
 output_dir = 'output'
-topic_dir = 'output/topic'
-css_dir = 'css'
-os.makedirs(topic_dir, exist_ok=True)
+topic_dir = os.path.join(output_dir, 'topic')
+css_dir = os.path.join(output_dir, 'css')
+if not os.path.exists(output_dir): os.makedirs(topic_dir, exist_ok=True)
+if not os.path.exists(topic_dir): os.makedirs(topic_dir, exist_ok=True)
+if not os.path.exists(css_dir): os.makedirs(css_dir, exist_ok=True)
 
 # Create json search file
 search_data_json = 'search_data.json'
@@ -108,10 +110,10 @@ shutil.copy(search_php_file_path, output_dir)
 
 # Copy the css folder to the output directory
 css_src = 'css'
-css_dst = os.path.join(output_dir, 'css')
-if os.path.exists(css_dst):
-    shutil.rmtree(css_dst)  # Remove existing css directory if it exists
-shutil.copytree(css_src, css_dst)
+css_dir = os.path.join(output_dir, 'css')
+if os.path.exists(css_dir):
+    shutil.rmtree(css_dir)  # Remove existing css directory if it exists
+shutil.copytree(css_src, css_dir)
 
 # Generate the main page
 latest_entries = data[-3:][::-1]  # Get the last three entries
@@ -159,5 +161,7 @@ search_posts_content = search_posts_template.render(
     title='Search Blog Posts'
 )
 search_posts_file_path = os.path.join(output_dir, 'search_posts.html')
+with open(search_posts_file_path, 'w', encoding='utf-8') as f:
+    f.write(search_posts_content)
 
 print("HTML files and JSON data have been generated in the 'output' directory.")
