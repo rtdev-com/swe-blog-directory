@@ -1,2 +1,4 @@
 jinja2
 feedparser
+pymongo[srv]
+load_dotenv

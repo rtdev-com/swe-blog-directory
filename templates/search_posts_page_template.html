@@ -1,0 +1,40 @@
+{% extends "parent_template.html" %}
+{% block content %}
+    <h1>Search blog posts</h1>
+    <input type="text" id="search" placeholder="Search blog posts...">
+    <div id="search-results"></div>
+
+{% endblock %}
+{% block lower_body_script %}
+<script>
+    document.getElementById('search').addEventListener('input', async function() {
+        const query = this.value.trim().toLowerCase();
+        const resultsContainer = document.getElementById('search-results');
+
+        if (query.length === 0) {
+            resultsContainer.innerHTML = ''; // Clear results when empty
+            return;
+        }
+
+        try {
+            const response = await fetch(`search.php?q=${encodeURIComponent(query)}`);
+            const results = await response.json();
+
+            if (results.error) {
+                resultsContainer.innerHTML = `<p>${results.error}</p>`;
+                return;
+            }
+
+            // Render search results
+            resultsContainer.innerHTML = results.map(item => `
+                <article id="article">
+                    <h2><a href="${item.link}">${item.title}</a></h2>
+                    <p>${item.description.substring(0, 500) || 'No description available'}</p>
+                </article>
+            `).join('');
+        } catch (error) {
+            resultsContainer.innerHTML = `<p>Error fetching results</p>`;
+        }
+    });
+</script>
+{% endblock %}

@@ -1,12 +1,19 @@
-import json
-from jinja2 import Environment, FileSystemLoader
 import os
+import re
+import json
+import shutil
 from collections import Counter, defaultdict
-import feedparser
 from datetime import datetime
 from html import unescape
-import re
-import shutil
+
+from jinja2 import Environment, FileSystemLoader
+from dotenv import load_dotenv
+import feedparser
+
+from database import MongoDBClient
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Define a function to strip HTML tags
 def strip_html_tags(text):
@@ -14,15 +21,16 @@ def strip_html_tags(text):
     return re.sub(clean, '', unescape(text))
 
 # Define the path to the JSON file
-json_file_path = 'data.json'
+blog_data_json_path = 'data.json'
 
 # Read the JSON file
-with open(json_file_path, 'r', encoding='utf-8') as jsonfile:
+with open(blog_data_json_path, 'r', encoding='utf-8') as jsonfile:
     data = json.load(jsonfile)
 
 tags_counter = Counter()
 tag_entries = defaultdict(list)
 posts_from_today = []
+list_of_documents = []
 
 for row in data:
     tags = row['tags'].split(',')
@@ -45,8 +53,28 @@ for row in data:
                         'published_date': published_date,
                         'formatted_date': published_date.strftime("%B %d, %Y")
                     })
+
+                    list_of_documents.append({
+                        'blog_id': row['id'],
+                        'title': post.title if 'title' in post else None,
+                        'link': post.link if 'link' in post else None,
+                        'description': strip_html_tags(post.description) if 'description' in post else None,
+                        'content': strip_html_tags(post.content[0].value) if 'content' in post else None,
+                        'published_date': post.published if 'published' in post else None,
+                        'formatted_date': post.published_parsed if 'published_parsed' in post else None,
+                        'update': post.updated if 'updated' in post else None
+                    })
         else:
             print(f"Error parsing feed for URL {row['rss']}: {feed.bozo_exception}")
+
+# Set MongoDB Variables from the .env file
+uri = os.getenv('MONGODB_URI')
+db_name = os.getenv('DB_NAME')
+collection_name = os.getenv('COLLECTION_NAME')
+
+client = MongoDBClient(uri, db_name, collection_name)
+#client.insert_documents(list_of_documents)
+collection = client.get_full_collection()
 
 # Sort rss_feeds by date, newest first
 posts_from_today.sort(key=lambda x: x['published_date'], reverse=True)
@@ -57,12 +85,23 @@ index_template = env.get_template('home_page_template.html')
 tag_template = env.get_template('topic_page_template.html')
 rss_template = env.get_template('new_posts_page_template.html')
 all_blogs_template = env.get_template('all_blogs_page_template.html')
+search_posts_template = env.get_template('search_posts_page_template.html')
 
 # Create output directories if they doesn't exist
 output_dir = 'output'
 topic_dir = 'output/topic'
 css_dir = 'css'
 os.makedirs(topic_dir, exist_ok=True)
+
+# Create json search file
+search_data_json = 'search_data.json'
+search_data_file_path = os.path.join(output_dir, search_data_json)
+with open(search_data_file_path, 'w', encoding='utf-8') as file:
+    json.dump(collection, file, indent=4)
+
+# Move search.php to output directory
+search_php_file_path = 'search.php'
+shutil.copy(search_php_file_path, output_dir)
 
 # Copy the css folder to the output directory
 css_src = 'css'
@@ -111,5 +150,11 @@ all_blogs_content = all_blogs_template.render(
 all_blogs_file_path = os.path.join(output_dir, 'all_software_blogs.html')
 with open(all_blogs_file_path, 'w', encoding='utf-8') as f:
     f.write(all_blogs_content)
+
+# Generate search posts page
+search_posts_content = search_posts_template.render(
+    title='Search Blog Posts'
+)
+search_posts_file_path = os.path.join(output_dir, 'search_posts.html')
 
 print("HTML files and JSON data have been generated in the 'output' directory.")
