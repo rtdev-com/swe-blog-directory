@@ -8,10 +8,6 @@ jobs:
   build:
     name: Build 🛠
     runs-on: ubuntu-latest
-    env:
-      MONGODB_URI: ${{ secrets.MONGODB_URI }}
-      DB_NAME: ${{ secrets.DB_NAME }}
-      COLLECTION_NAME: ${{ secrets.COLLECTION_NAME }}
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@main
@@ -26,6 +22,10 @@ jobs:
       - name: Debug Environment Variables
         run: printenv | grep -E 'MONGODB_URI|DB_NAME|COLLECTION_NAME'
       - name: Build 🏗
+        env:
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+          DB_NAME: ${{ secrets.DB_NAME }}
+          COLLECTION_NAME: ${{ secrets.COLLECTION_NAME }}
         run: python build.py
       - name: Archive production artifacts 📦
         uses: actions/upload-artifact@v4
