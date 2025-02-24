@@ -8,6 +8,10 @@ jobs:
   build:
     name: Build 🛠
     runs-on: ubuntu-latest
+    env:
+      MONGODB_URI: ${{ secrets.MONGODB_URI }}
+      DB_NAME: ${{ secrets.DB_NAME }}
+      COLLECTION_NAME: ${{ secrets.COLLECTION_NAME }}
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@main
