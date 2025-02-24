@@ -471,7 +471,6 @@
     {
         "url": "https://rachelbythebay.com/w/",
         "title": "Rachel by the Bay",
-        "rss": "https://rachelbythebay.com/w/atom.xml",
         "description": "Over 1000 posts on software, technology, sysadmin war stories, and more.",
         "tags": "sysadmin, ffmpeg, hosting, centos, rpi",
         "id": 60

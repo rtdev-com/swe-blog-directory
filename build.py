@@ -32,6 +32,15 @@ tag_entries = defaultdict(list)
 posts_from_today = []
 list_of_documents = []
 
+# Set MongoDB Variables from the .env file
+uri = os.getenv('MONGODB_URI')
+db_name = os.getenv('DB_NAME')
+collection_name = os.getenv('COLLECTION_NAME')
+
+if not uri or not db_name or not collection_name:
+    raise ValueError(f"MongoDB URI {len(uri)}, database name {len(db_name)}, and collection name {len(collection_name)} must be set.")
+client = MongoDBClient(uri, db_name, collection_name)
+
 for row in data:
     tags = row['tags'].split(',')
     for tag in tags:
@@ -67,12 +76,6 @@ for row in data:
         else:
             print(f"Error parsing feed for URL {row['rss']}: {feed.bozo_exception}")
 
-# Set MongoDB Variables from the .env file
-uri = os.getenv('MONGODB_URI')
-db_name = os.getenv('DB_NAME')
-collection_name = os.getenv('COLLECTION_NAME')
-
-client = MongoDBClient(uri, db_name, collection_name)
 #client.insert_documents(list_of_documents)
 collection = client.get_full_collection()
 
