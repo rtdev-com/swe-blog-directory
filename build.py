@@ -76,7 +76,7 @@ for row in data:
         else:
             print(f"Error parsing feed for URL {row['rss']}: {feed.bozo_exception}")
 
-#client.insert_documents(list_of_documents)
+client.insert_documents(list_of_documents)
 collection = client.get_full_collection()
 
 # Sort rss_feeds by date, newest first

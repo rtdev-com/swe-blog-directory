@@ -470,6 +470,7 @@
     },
     {
         "url": "https://rachelbythebay.com/w/",
+        "rss": "https://rachelbythebay.com/w/atom.xml",
         "title": "Rachel by the Bay",
         "description": "Over 1000 posts on software, technology, sysadmin war stories, and more.",
         "tags": "sysadmin, ffmpeg, hosting, centos, rpi",
