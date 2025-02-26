@@ -656,5 +656,13 @@
         "description": "Seasoned software engineer, content creator, and educator with a passion for empowering aspiring developers and professionals alike.",
         "tags": "dotnet, microsoft, leadership, software-engineering, career",
         "id": 83
+    },
+    {
+        "url": "https://rndthts.dev/",
+        "title": "Random Thoughts",
+        "rss": "https://rndthts.dev/posts/index.xml",
+        "description": "This is where I share random thoughts on software development and document my proof-of-concept projects. Expect a mix of ideas, experiments, and coding explorations.",
+        "tags": "cpp, c-sharp, python, gtest, oop",
+        "id": 84
     }
 ]
