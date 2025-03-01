@@ -664,5 +664,12 @@
         "description": "This is where I share random thoughts on software development and document my proof-of-concept projects. Expect a mix of ideas, experiments, and coding explorations.",
         "tags": "cpp, c-sharp, python, gtest, oop",
         "id": 84
+    },
+    {
+        "url": "https://josephthacker.com/",
+        "title": "Joseph Thacker",
+        "rss": "https://josephthacker.com/feed.xml",
+        "description": "Thoughts on hacking, ai, faith, and more.",
+        "tags": "hacking, ai, cybersecurity, faith, life"
     }
 ]
