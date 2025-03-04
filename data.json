@@ -678,5 +678,12 @@
         "rss": "https://www.meziantou.net/feed.rss",
         "description": "Blog about Microsoft technologies (.NET, ASP.NET Core, Blazor, EF Core, WPF, TypeScript, etc.)",
         "tags": "dotnet, csharp, xunit, blazor, aspnetcore"
+    },
+    {
+        "url": "https://andrewlock.net",
+        "title": "Andrew Lock",
+        "rss": "https://andrewlock.net/rss.xml",
+        "description": ".NET Escapades",
+        "tags": "dotnet, aspdotnet, hosting, csharp, cors"
     }
 ]

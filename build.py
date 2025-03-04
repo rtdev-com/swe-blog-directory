@@ -54,7 +54,7 @@ for row in data:
         if feed.bozo == 0 and 'feed' in feed:
             for post in feed.entries:
                 published_date = datetime(*post.published_parsed[:6]) if 'published_parsed' in post else datetime(1900, 1, 1)
-                if published_date.date() == datetime.now().date():
+                if published_date.date() == datetime(2025, 3, 3).date(): #datetime.now().date():
                     posts_from_today.append({
                         'title': post.title,
                         'link': post.link,
