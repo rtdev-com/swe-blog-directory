@@ -1,7 +1,7 @@
 name: Build and deploy
 on:
-  push:
-    branches: [main]
+  schedule:
+    - cron: '30 2 * * *'  # Runs at 2:30 AM UTC every day
   workflow_dispatch:
 
 jobs:
