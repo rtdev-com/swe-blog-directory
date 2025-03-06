@@ -3,7 +3,7 @@ import re
 import json
 import shutil
 from collections import Counter, defaultdict
-from datetime import datetime
+from datetime import datetime, timedelta
 from html import unescape
 
 from jinja2 import Environment, FileSystemLoader
@@ -38,8 +38,11 @@ db_name = os.getenv('DB_NAME')
 collection_name = os.getenv('COLLECTION_NAME')
 
 if not uri or not db_name or not collection_name:
-    raise ValueError(f"MongoDB URI {len(uri)}, database name {len(db_name)}, and collection name {len(collection_name)} must be set.")
+    raise ValueError(f"MongoDB URI {uri}, database name {db_name}, and collection name {collection_name} must be set.")
 client = MongoDBClient(uri, db_name, collection_name)
+
+# Calculate the time 24 hours ago
+time_24_hours_ago = datetime.now() - timedelta(days=1)
 
 for row in data:
     tags = row['tags'].split(',')
@@ -54,7 +57,7 @@ for row in data:
         if feed.bozo == 0 and 'feed' in feed:
             for post in feed.entries:
                 published_date = datetime(*post.published_parsed[:6]) if 'published_parsed' in post else datetime(1900, 1, 1)
-                if published_date.date() == datetime(2025, 3, 3).date(): #datetime.now().date():
+                if published_date > time_24_hours_ago:
                     posts_from_today.append({
                         'title': post.title,
                         'link': post.link,
