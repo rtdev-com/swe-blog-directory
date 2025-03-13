@@ -670,20 +670,23 @@
         "title": "Joseph Thacker",
         "rss": "https://josephthacker.com/feed.xml",
         "description": "Thoughts on hacking, ai, faith, and more.",
-        "tags": "hacking, ai, cybersecurity, faith, life"
+        "tags": "hacking, ai, cybersecurity, faith, life",
+        "id": 85
     },
     {
         "url": "https://www.meziantou.net",
         "title": "Gérald Barré",
         "rss": "https://www.meziantou.net/feed.rss",
         "description": "Blog about Microsoft technologies (.NET, ASP.NET Core, Blazor, EF Core, WPF, TypeScript, etc.)",
-        "tags": "dotnet, csharp, xunit, blazor, aspnetcore"
+        "tags": "dotnet, csharp, xunit, blazor, aspnetcore",
+        "id": 86
     },
     {
         "url": "https://andrewlock.net",
         "title": "Andrew Lock",
         "rss": "https://andrewlock.net/rss.xml",
         "description": ".NET Escapades",
-        "tags": "dotnet, aspdotnet, hosting, csharp, cors"
+        "tags": "dotnet, aspdotnet, hosting, csharp, cors",
+        "id": 87
     }
 ]
