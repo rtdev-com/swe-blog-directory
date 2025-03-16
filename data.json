@@ -688,5 +688,13 @@
         "description": ".NET Escapades",
         "tags": "dotnet, aspdotnet, hosting, csharp, cors",
         "id": 87
+    },
+    {
+        "url": "https://treyhunner.com/",
+        "title": "Trey Hunner",
+        "rss": "https://treyhunner.com/atom.xml",
+        "description": "I help developers level-up their Python skills",
+        "tags": "python, django, uv, pycon, morsels",
+        "id": 88
     }
 ]
