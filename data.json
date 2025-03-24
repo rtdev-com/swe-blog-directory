@@ -677,7 +677,7 @@
         "url": "https://www.meziantou.net",
         "title": "Gérald Barré",
         "rss": "https://www.meziantou.net/feed.rss",
-        "description": "Blog about Microsoft technologies (.NET, ASP.NET Core, Blazor, EF Core, WPF, TypeScript, etc.)",
+        "description": "Blog about Microsoft technologies (.NET, ASP.NET Core, Blazor, EF Core, WPF, TypeScript, etc.).",
         "tags": "dotnet, csharp, xunit, blazor, aspnetcore",
         "id": 86
     },
@@ -693,8 +693,24 @@
         "url": "https://treyhunner.com/",
         "title": "Trey Hunner",
         "rss": "https://treyhunner.com/atom.xml",
-        "description": "I help developers level-up their Python skills",
+        "description": "I help developers level-up their Python skills.",
         "tags": "python, django, uv, pycon, morsels",
         "id": 88
+    },
+    {
+        "url": "https://vkc.sh/blog/",
+        "title": "Veronica Explains",
+        "rss": "https://vkc.sh/feed/",
+        "description": "Veronica Explains… Veronica!",
+        "tags": "linux, tutorials, webdev, music, culture",
+        "id": 89
+    },
+    {
+        "url": "https://lynnandtonic.com",
+        "title": "Lynn Fisher",
+        "rss": "https://lynnandtonic.com/feed.xml",
+        "description": "A human who makes stuff.",
+        "tags": "ux, case-studies, design, webdev, css",
+        "id": 90
     }
 ]
