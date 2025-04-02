@@ -712,5 +712,36 @@
         "description": "A human who makes stuff.",
         "tags": "ux, case-studies, design, webdev, css",
         "id": 90
+    },
+    {
+        "url": "https://daverupert.com/archive/",
+        "title": "Dave Rupert",
+        "rss": "https://daverupert.com/atom.xml",
+        "description": "I write web components at Microsoft and am co-host of ShopTalk, a podcast about front-end web design and development.",
+        "tags": "gamedev, css, productivity, webdev, webcomponents",
+        "id": 91
+    },
+    {
+        "url": "https://micro.webology.dev/",
+        "title": "Jeff Triplett",
+        "rss": "https://micro.webology.dev/feed.xml",
+        "description": "Jeff Triplett's Micro.blog.",
+        "tags": "llm, django, python, uv, ollama",
+        "id": 92
+    },
+    {
+        "url": "https://www.valentinog.com/blog/",
+        "title": "Valentino Gagliardi",
+        "description": "Valentino Gagliardi's blog.",
+        "tags": "django, javascript, htmx, consulting, typescript",
+        "id": 93
+    },
+    {
+        "url": "https://randomcoding.com/blog/",
+        "title": "John Pereira",
+        "rss": "https://randomcoding.com/feed/feed.xml",
+        "description": "With over 15 years in the technology space, my area of expertise lies in API and large-scale Web application development and its related constellation of technologies and processes.",
+        "tags": "cursorai, wordpress, mysql, csrf, javascript",
+        "id": 94
     }
 ]
