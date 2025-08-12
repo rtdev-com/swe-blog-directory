@@ -743,5 +743,13 @@
         "description": "With over 15 years in the technology space, my area of expertise lies in API and large-scale Web application development and its related constellation of technologies and processes.",
         "tags": "cursorai, wordpress, mysql, csrf, javascript",
         "id": 94
+    },
+    {
+        "url": "https://martymcgui.re/posts",
+        "title": "Marty McGuire",
+        "rss": "https://granary.io/url?input=html&output=atom&url=https://martymcgui.re/posts/&hub=https://martymcguire.superfeedr.com",
+        "description": "Marty McGuire is a web developer in New York, NY. He can be found posting cat pictures, streaming and podcasting, performing improv comedy, and building IndieWeb things.",
+        "tags": "html, indieweb, book, podcast, gaming",
+        "id": 95
     }
 ]
