@@ -751,5 +751,13 @@
         "description": "Marty McGuire is a web developer in New York, NY. He can be found posting cat pictures, streaming and podcasting, performing improv comedy, and building IndieWeb things.",
         "tags": "html, indieweb, book, podcast, gaming",
         "id": 95
+    },
+    {
+        "url": "https://coles.codes/",
+        "title": "coles.codes",
+        "rss": "https://coles.codes/index.xml",
+        "description": "Matt Coles writes hands-on engineering posts about Python, AI agents, local LLMs, homelab, and AWS CDK.",
+        "tags": "python, ai, llm, agents, aws, software-engineering",
+        "id": 96
     }
 ]
