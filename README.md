@@ -31,13 +31,30 @@ If you're unsure whether a blog qualifies, feel free to open a discussion, and w
 
 ### Running Locally
 
+#### Requirements
+
+ * Python 3.6+
+ * MongoDB Server 5.0+ instance, local or remote (see [below](#running-mongodb-in-docker))
+
 Want to try things out or preview the directory on your machine? You can build the project locally by following these steps:
 
 1. Install the dependencies: `pip install -r requirements.txt`
+1. Configure the project: `cp .env-example .env` and replace at least `MONGODB_URI`
 1. Build the directory: `python build.py`
-1. Check the `/output` directory for the generated artifacts.
+1. Check the `/output` directory for the generated artifacts. Optionally spin up a local server: `python -m http.server --directory output 8000`
 
+#### Running MongoDB in Docker
 
+If you have Docker on your machine, you can spawn a MongoDB instance like so:
+
+```bash
+docker run -d \
+  --name swe-blogs-mongo \
+  --publish 127.0.0.1:27017:27017 \
+  mongo:8.0
+```
+
+Your `.env` ought to point to the same port: `MONGODB_URI=mongodb://127.0.0.1:27017`
 
 ## More information
 
