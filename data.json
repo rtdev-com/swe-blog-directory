@@ -759,5 +759,13 @@
         "description": "Matt Coles writes hands-on engineering posts about Python, AI agents, local LLMs, homelab, and AWS CDK.",
         "tags": "python, ai, llm, agents, aws, software-engineering",
         "id": 96
+    },
+    {
+        "url": "https://pimm.work/thoughts/freshest",
+        "title": "pimm.work/thoughts",
+        "rss": "https://pimm.work/thoughts/rss.xml",
+        "description": "Essays on software engineering and the human systems behind sustainable technology, by Pimm \"de Chinchilla\" Hogeling.",
+        "tags": "leadership, management, engineering-management",
+        "id": 97
     }
 ]
